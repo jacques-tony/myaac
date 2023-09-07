@@ -93,9 +93,9 @@ if (isset($config['boxes']))
         function LoadLoginBox() {
             if (loginStatus == "false") {
                 document.getElementById('ButtonText').style.backgroundImage = "url('" + IMAGES + "/global/buttons/mediumbutton_login.png')";
-                document.getElementById('LoginstatusText_2').style.backgroundImage = "url('" + IMAGES + "/loginbox/loginbox-font-create-account.gif')";
-                document.getElementById('LoginstatusText_2_1').style.backgroundImage = "url('" + IMAGES + "/loginbox/loginbox-font-create-account.gif')";
-                document.getElementById('LoginstatusText_2_2').style.backgroundImage = "url('" + IMAGES + "/loginbox/loginbox-font-create-account-over.gif')";
+                document.getElementById('LoginstatusText_2').style.backgroundImage = "url('" + IMAGES + "/loginbox/loginbox-font-create-account.png')";
+                document.getElementById('LoginstatusText_2_1').style.backgroundImage = "url('" + IMAGES + "/loginbox/loginbox-font-create-account.png')";
+                document.getElementById('LoginstatusText_2_2').style.backgroundImage = "url('" + IMAGES + "/loginbox/loginbox-font-create-account-over.png')";
             } else {
                 document.getElementById('ButtonText').style.backgroundImage = "url('" + IMAGES + "/global/buttons/mediumbutton_myaccount.png')";
                 document.getElementById('LoginstatusText_2').style.backgroundImage = "url('" + IMAGES + "/loginbox/loginbox-font-logout.gif')";
@@ -335,20 +335,14 @@ if (isset($config['boxes']))
                 </div>
 
                 <div id="Loginbox">
-                    <div id="LoginTop"
-                         style="background-image:url(<?= $template_path; ?>/images/general/box-top.gif)"></div>
-                    <div id="BorderLeft" class="LoginBorder"
-                         style="background-image:url(<?= $template_path; ?>/images/general/chain.gif)"></div>
-
-
                     <div id="LoginButtonContainer"
-                         style="background-image:url(<?= $template_path; ?>/images/loginbox/loginbox-textfield-background.gif)">
+                         style="background-image:url(<?= $template_path; ?>/images/loginbox/loginbox-textfield-background.png)">
                         <div id="LoginButton"
-                             style="background-image:url(<?= $template_path; ?>/images/global/buttons/mediumbutton.gif)">
+                             style="background-image:url(<?= $template_path; ?>/images/global/buttons/mediumbutton.png)">
                             <div onClick="LoginButtonAction();" onMouseOver="MouseOverBigButton(this);"
                                  onMouseOut="MouseOutBigButton(this);">
                                 <div class="Button"
-                                     style="background-image:url(<?= $template_path; ?>/images/global/buttons/mediumbutton-over.gif)"></div>
+                                     style="background-image:url(<?= $template_path; ?>/images/global/buttons/mediumbutton-over.png)"></div>
                                 <?php
                                 echo '<div id="ButtonText" ' . ($logged ? '' : 'style="background-image:url(' . $template_path . '/images/global/buttons/mediumbutton_login.png)"') . '>
 			 </div>';
@@ -361,20 +355,15 @@ if (isset($config['boxes']))
                     <div style="clear:both"></div>
 
                     <div class="Loginstatus"
-                         style="background-image:url(<?= $template_path; ?>/images/loginbox/loginbox-textfield-background.gif)">
+                         style="background-image:url(<?= $template_path; ?>/images/loginbox/[imagem].gif)">
                         <div id="LoginstatusText_2" onClick="LoginstatusTextAction(this);"
                              onMouseOver="MouseOverLoginBoxText(this);" onMouseOut="MouseOutLoginBoxText(this);">
                             <div id="LoginstatusText_2_1" class="LoginstatusText"
-                                 style="background-image:url(<?= $template_path; ?>/images/loginbox/loginbox-font-create-account.gif)"></div>
+                                 style="background-image:url(<?= $template_path; ?>/images/loginbox/loginbox-font-create-account.png)"></div>
                             <div id="LoginstatusText_2_2" class="LoginstatusText"
-                                 style="background-image:url(<?= $template_path; ?>/images/loginbox/loginbox-font-create-account-over.gif)"></div>
+                                 style="background-image:url(<?= $template_path; ?>/images/loginbox/loginbox-font-create-account-over.png)"></div>
                         </div>
                     </div>
-
-                    <div id="BorderRight" class="LoginBorder"
-                         style="background-image:url(<?= $template_path; ?>/images/general/chain.gif)"></div>
-                    <div id="LoginBottom" class="Loginstatus"
-                         style="background-image:url(<?= $template_path; ?>/images/general/box-bottom.gif)"></div>
                 </div>
 
                 <div class="SmallMenuBox" id="DownloadBox">
