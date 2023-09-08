@@ -367,29 +367,21 @@ if (isset($config['boxes']))
                 </div>
 
                 <div class="SmallMenuBox" id="DownloadBox">
-                    <div class="SmallBoxTop"
-                         style="background-image:url(<?= $template_path; ?>/images/global/general/box-top.gif)"></div>
-                    <div class="SmallBoxBorder"
-                         style="background-image:url(<?= $template_path; ?>/images/global/general/chain.gif);"></div>
                     <div class="SmallBoxButtonContainer"
-                         style="background-image:url(<?= $template_path; ?>/images/global/loginbox/loginbox-textfield-background.gif)">
+                         style="background-image:url(<?= $template_path; ?>/images/global/loginbox/loginbox-textfield-background-download.png)">
                         <a href="?subtopic=downloadclient&step=downloadagreement">
                             <div id="PlayNowContainer">
                                 <div class="MediumButtonBackground"
-                                     style="background-image:url(<?= $template_path; ?>/images/global/buttons/mediumbutton.gif)"
+                                     style="background-image:url(<?= $template_path; ?>/images/global/buttons/mediumbutton.png)"
                                      onmouseover="MouseOverBigButton(this);" onmouseout="MouseOutBigButton(this);">
                                     <div class="MediumButtonOver"
-                                         style="background-image: url(<?= $template_path; ?>/images/global/buttons/mediumbutton-over.gif); visibility: hidden;"></div>
+                                         style="background-image: url(<?= $template_path; ?>/images/global/buttons/mediumbutton-over-download.png); visibility: hidden;"></div>
                                     <input class="MediumButtonText" type="image" name="Download" alt="Download"
                                            src="<?= $template_path; ?>/images/global/buttons/mediumbutton_download.png">
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="SmallBoxBorder BorderRight"
-                         style="background-image:url(<?= $template_path; ?>/images/global/general/chain.gif);"></div>
-                    <div class="Loginstatus SmallBoxBottom"
-                         style="background-image:url(<?= $template_path; ?>/images/global/general/box-bottom.gif);"></div>
                 </div>
 
                 <div-- id='Menu'>
