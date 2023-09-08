@@ -243,19 +243,19 @@ if (isset($config['boxes']))
 
         function MouseOutMenuItem(source) {
             if (source.firstChild.style) {
-                source.firstChild.style.visibility = "visible";
+                source.firstChild.style.visibility = "hidden";
             }
         }
 
         function MouseOverSubmenuItem(source) {
             if (source.style) {
-                source.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
+                source.style.backgroundColor = "rgba(0, 0, 0, 2.0);";
             }
         }
 
         function MouseOutSubmenuItem(source) {
             if (source.style) {
-                source.style.backgroundColor = "#FFFFFF;"
+                source.style.backgroundColor = "rgba(0, 0, 0, 0.9);"
             }
         }
     </script>

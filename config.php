@@ -99,7 +99,7 @@ $config = array(
 	'account_mail_verify' => false, // force users to confirm their email addresses when registering account
     'account_mail_confirmed_reward' => [ // reward users for confirming their E-Mails
         // account_mail_verify needs to be enabled too
-        'premium_days' => 0,
+        'premium_days' => 7,
         'coins_transferable' => 0,
         'coins' => 0,
         'message' => 'You received %d %s for confirming your E-Mail address.' // example: You received 20 coins for confirming your E-Mail address.
@@ -189,7 +189,7 @@ $config = array(
 
 	// town list used when creating character
 	// won't be displayed if there is only one item (rookgaard for example)
-	'character_towns' => array(1),
+	'character_towns' => array(2),
 
 	// characters length
 	// This is the minimum and the maximum length that a player can create a character. It is highly recommend the maximum length to be 21.
