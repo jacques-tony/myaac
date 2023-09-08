@@ -101,7 +101,7 @@ img {
 
 #ContentRow {
   position: relative;
-  top: 155px;
+  top: 195px;
 }
 
 /* "star-HTML-hack" to correct the position of the content row */
@@ -171,20 +171,18 @@ img {
 
 #LeftArtwork {
   position: absolute;
-  height: 140px;
-  width: 166px;
-  top: -140px;
-  left: 4px;
+  height: 250px;
+  width: 480px;
+  top: -208px;
+  left: 406px;
   background-repeat: no-repeat;
   z-index:5;
 }
 
 #LeftArtwork #TibiaLogoArtworkTop {
   position: absolute;
-  top: -17px;
-  left: -14px;
-  height: 158px;
-  width: 196px;
+  height: 250px;
+  width: 480px;
   z-index: 5;
   cursor: pointer;
   border: 0px;

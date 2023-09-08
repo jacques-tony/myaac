@@ -330,8 +330,6 @@ if (isset($config['boxes']))
                     <img id="TibiaLogoArtworkTop"
                          src="<?= $template_path; ?>/images/header/<?= $config['logo_image']; ?>"
                          onClick="window.location = '<?= getLink('news') ?>';" alt="logoartwork"/>
-                    <img id="LogoLink" src="<?= $template_path; ?>/images/header/tibia-logo-artwork-string.gif"
-                         onClick="window.location = 'mailto:<?= $config['mail_address']; ?>';" alt="logoartwork"/>
                 </div>
 
                 <div id="Loginbox">
