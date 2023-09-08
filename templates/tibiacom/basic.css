@@ -579,8 +579,12 @@ img {
   position: relative;
   margin-left: 0px;
   margin-right: 5px;
-  background-color: #0D2E2B;
+  background-color: rgba(0, 0, 0, 0.7);
   width: 170px;
+  text-shadow:
+          0 0 10px rgba(225, 238, 253, .7),
+          0 0 40px rgba(225, 238, 253, .7),
+          0 0 100px rgba(225, 238, 253, .7);
 }
 
 .Submenuitem {
@@ -604,9 +608,9 @@ img {
   border-top: 0;
   padding-top: 2px;
   padding-bottom: 2px;
-  padding-left: 22px;
-  border-bottom: 1px solid #4b7874;
+  border-bottom: 1px solid #535353;
   overflow: hidden;
+  text-align: center;
 }
 
 /* Submenu links */
