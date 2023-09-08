@@ -459,15 +459,16 @@ img {
 
 #Menu {
   position: relative;
-  left: 5px;
+  left: -11px;
+  top: 8px;
   background-repeat: no-repeat;
 }
 
 #MenuTop {
   position: absolute;
   left: -5px;
-  top: -12px;
-  height: 12px;
+  top: -26px;
+  height: 26px;
   width: 180px;
   background-repeat: no-repeat;
 }
@@ -476,7 +477,7 @@ img {
   position: relative;
   left: -5px;
   bottom: 0px;
-  height: 12px;
+  height: 29px;
   width: 180px;
   background-repeat: no-repeat;
 }
@@ -543,15 +544,15 @@ img {
   height: 32px;
   width: 32px;
   top: 0px;
-  left: 8px;
+  left: 2px;
 }
 
 .Label {
   position: absolute;
   height: 22px;
   width: 116px;
-  top: 6px;
-  left: 42px;
+  top: 0px;
+  left: 35px;
 }
 
 /* Submenus(items) */
