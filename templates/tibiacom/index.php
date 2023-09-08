@@ -93,9 +93,9 @@ if (isset($config['boxes']))
         function LoadLoginBox() {
             if (loginStatus == "false") {
                 document.getElementById('ButtonText').style.backgroundImage = "url('" + IMAGES + "/global/buttons/mediumbutton_login.png')";
-                document.getElementById('LoginstatusText_2').style.backgroundImage = "url('" + IMAGES + "/loginbox/loginbox-font-create-account.png')";
-                document.getElementById('LoginstatusText_2_1').style.backgroundImage = "url('" + IMAGES + "/loginbox/loginbox-font-create-account.png')";
-                document.getElementById('LoginstatusText_2_2').style.backgroundImage = "url('" + IMAGES + "/loginbox/loginbox-font-create-account-over.png')";
+                document.getElementById('LoginstatusText_2').style.backgroundImage = "url('" + IMAGES + "/loginbox/loginbox-font-create-account.gif')";
+                document.getElementById('LoginstatusText_2_1').style.backgroundImage = "url('" + IMAGES + "/loginbox/loginbox-font-create-account.gif')";
+                document.getElementById('LoginstatusText_2_2').style.backgroundImage = "url('" + IMAGES + "/loginbox/loginbox-font-create-account-over.gif')";
             } else {
                 document.getElementById('ButtonText').style.backgroundImage = "url('" + IMAGES + "/global/buttons/mediumbutton_myaccount.png')";
                 document.getElementById('LoginstatusText_2').style.backgroundImage = "url('" + IMAGES + "/loginbox/loginbox-font-logout.gif')";
@@ -357,9 +357,9 @@ if (isset($config['boxes']))
                         <div id="LoginstatusText_2" onClick="LoginstatusTextAction(this);"
                              onMouseOver="MouseOverLoginBoxText(this);" onMouseOut="MouseOutLoginBoxText(this);">
                             <div id="LoginstatusText_2_1" class="LoginstatusText"
-                                 style="background-image:url(<?= $template_path; ?>/images/loginbox/loginbox-font-create-account.png)"></div>
+                                 style="background-image:url(<?= $template_path; ?>/images/loginbox/loginbox-font-create-account.gif)"></div>
                             <div id="LoginstatusText_2_2" class="LoginstatusText"
-                                 style="background-image:url(<?= $template_path; ?>/images/loginbox/loginbox-font-create-account-over.png)"></div>
+                                 style="background-image:url(<?= $template_path; ?>/images/loginbox/loginbox-font-create-account-over.gif)"></div>
                         </div>
                     </div>
                 </div>
