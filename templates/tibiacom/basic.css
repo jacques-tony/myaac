@@ -327,6 +327,40 @@ img {
     height: 85px;
 }
 
+#monsterboosttext {
+  text-align: center;
+  width: 180px;
+  top: -180px;
+  position: absolute;
+  color: #cddc39;
+  font-family: Verdana,Tahoma;
+  font-size: 7pt;
+  font-weight: 700;
+  text-shadow: 0.1em 0.1em 0.08em #000, -0.1em -0.1em 0.08em #000, 0.1em -0.1em 0.08em #000, -0.1em 0.1em 0.08em #000, -0.1em 0 0.08em #000, 0.1em 0 0.08em #000;
+}
+
+#monsterboostloot {
+  position: absolute;
+  top: -150px;
+  width: 180px;
+  color: #fff;
+  font-family: Verdana,Tahoma;
+  font-size: 7pt;
+  font-weight: 700;
+  text-shadow: 0.1em 0.1em 0.08em #000, -0.1em -0.1em 0.08em #000, 0.1em -0.1em 0.08em #000, -0.1em 0.1em 0.08em #000, -0.1em 0 0.08em #000, 0.1em 0 0.08em #000;
+}
+
+#monsterboostexp {
+  position: absolute;
+  top: -165px;
+  width: 180px;
+  color: #00f000;
+  font-family: Verdana,Tahoma;
+  font-size: 7pt;
+  font-weight: 700;
+  text-shadow: 0.1em 0.1em 0.08em #000, -0.1em -0.1em 0.08em #000, 0.1em -0.1em 0.08em #000, -0.1em 0.1em 0.08em #000, -0.1em 0 0.08em #000, 0.1em 0 0.08em #000;
+}
+
 #RightArtwork #PlayersOnline {
   font-family : Verdana, Arial, Times New Roman, sans-serif;
   font-size: 7pt;
