@@ -1,11 +1,12 @@
 <style>
     .rank{
-        width: 180px;
+        width: 207px;
         max-height: 360px;
     }
     .rank_header{
-        height: 45px;
-        width: 180px;
+        height: 41px;
+        margin-top: -3px;
+        width: 207px;
         background-image: url('templates/tibiacom/images/themeboxes/box_top.png');
         font-family: Verdana;
         font-weight: bold;
@@ -13,14 +14,14 @@
         line-height: 65px;
     }
     .rank_bottom{
-        height: 30px;
-        width: 180px;
+        height: 35px;
+        width: 207px;
         margin-top: -20px;
         background-image: url('templates/tibiacom/images/themeboxes/box_bottom.png');
     }
     .rank_content{
         padding: 0px 10px;
-        width: 160px;
+        width: 207px;
         max-height: 290px;
         background-image: url('templates/tibiacom/images/themeboxes/box_bg.png');
     }

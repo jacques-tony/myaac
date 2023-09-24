@@ -296,8 +296,8 @@ img {
   position: absolute;
   height: 64px;
   width: 64px;
-  top: -136px;
-  left: -15px;
+  top: -185px;
+  left: -65px;
   z-index: 15;
   cursor: pointer;
 }
@@ -306,18 +306,17 @@ img {
   position: absolute;
   height: 64px;
   width: 64px;
-  top: -136px;
-  left: 40px;
+  top: -185px;
   z-index: 15;
   cursor: pointer;
 }
 
 #PedestalAndOnline {
   position: absolute;
-  left: -15px;
-  top: -121px;
-  width: 161px;
-  height: 85px;
+  left: -27px;
+  top: -145px;
+  width: 190px;
+  height: 127px;
 }
 #Pedestal {
     position: absolute;
@@ -363,24 +362,28 @@ img {
 
 #creaturenameboost {
   position: absolute;
-  top: -110px;
+  top: -58px;
+  left: -10px;
   width: 80px;
   color: #00f000;
   font-family: Verdana,Tahoma;
   font-size: 7pt;
   font-weight: 700;
   text-shadow: 0.1em 0.1em 0.08em #000, -0.1em -0.1em 0.08em #000, 0.1em -0.1em 0.08em #000, -0.1em 0.1em 0.08em #000, -0.1em 0 0.08em #000, 0.1em 0 0.08em #000;
+  z-index: 99;
 }
 
 #bossnameboost {
   position: absolute;
-  top: -110px;
+  top: -58px;
+  left: -20px;
   width: 225px;
   color: #00f000;
   font-family: Verdana,Tahoma;
   font-size: 7pt;
   font-weight: 700;
   text-shadow: 0.1em 0.1em 0.08em #000, -0.1em -0.1em 0.08em #000, 0.1em -0.1em 0.08em #000, -0.1em 0.1em 0.08em #000, -0.1em 0 0.08em #000, 0.1em 0 0.08em #000;
+  z-index: 99;
 }
 
 #RightArtwork #PlayersOnline {
