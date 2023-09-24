@@ -696,10 +696,6 @@ if ($status['online']) {
 
             <div id="monsterboostexp" class="lineUp"><i class="fas fa-arrow-up" aria-hidden="true"></i> Exp +13%</div>
 
-            <div id="nomebossboost">
-                <a><?= ucwords(strtolower(trim($creaturename))); ?></a>
-                <a><?= ucwords(strtolower(trim($bossname))); ?></a>
-            </div> 
             
                 <?PHP
                 $creaturequery = $SQL->query("SELECT `boostname`, `looktype`, `lookfeet` , `looklegs` , `lookhead` , `lookbody` , `lookaddons` , `lookmount`   FROM `boosted_creature`")->fetch();
@@ -725,7 +721,13 @@ if ($status['online']) {
                 $bossmount = $bossquery["lookmount"];
                 ?>
 
-                
+                <div id="creaturenameboost" class="creaturenameboost">
+                    <a> <?= ucwords(strtolower(trim($creaturename))); ?> </a>
+                </div>
+
+                <div id="bossnameboost" class="bossnameboost">
+                    <a> <?= ucwords(strtolower(trim($bossname))); ?> </a>
+                </div>
                 
                 <div id="RightArtwork">
                     <img id="Creature"

@@ -361,6 +361,28 @@ img {
   text-shadow: 0.1em 0.1em 0.08em #000, -0.1em -0.1em 0.08em #000, 0.1em -0.1em 0.08em #000, -0.1em 0.1em 0.08em #000, -0.1em 0 0.08em #000, 0.1em 0 0.08em #000;
 }
 
+#creaturenameboost {
+  position: absolute;
+  top: -110px;
+  width: 80px;
+  color: #00f000;
+  font-family: Verdana,Tahoma;
+  font-size: 7pt;
+  font-weight: 700;
+  text-shadow: 0.1em 0.1em 0.08em #000, -0.1em -0.1em 0.08em #000, 0.1em -0.1em 0.08em #000, -0.1em 0.1em 0.08em #000, -0.1em 0 0.08em #000, 0.1em 0 0.08em #000;
+}
+
+#bossnameboost {
+  position: absolute;
+  top: -110px;
+  width: 225px;
+  color: #00f000;
+  font-family: Verdana,Tahoma;
+  font-size: 7pt;
+  font-weight: 700;
+  text-shadow: 0.1em 0.1em 0.08em #000, -0.1em -0.1em 0.08em #000, 0.1em -0.1em 0.08em #000, -0.1em 0.1em 0.08em #000, -0.1em 0 0.08em #000, 0.1em 0 0.08em #000;
+}
+
 #RightArtwork #PlayersOnline {
   font-family : Verdana, Arial, Times New Roman, sans-serif;
   font-size: 7pt;
