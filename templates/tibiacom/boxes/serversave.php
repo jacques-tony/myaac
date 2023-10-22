@@ -11,6 +11,7 @@
         font-weight: bold;
         color: #d5c3af;
         line-height: 65px;
+        margin-top: 25px;
     }
     .serversave_bottom{
         height: 30px;

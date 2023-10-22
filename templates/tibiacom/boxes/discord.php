@@ -16,23 +16,22 @@
     .discord_bottom{
         height: 35px;
         width: 207px;
-        margin-top: -20px;
+        margin-top: 0px;
         background-image: url('templates/tibiacom/images/themeboxes/box_bottom.png');
     }
     .discord_content{
-        padding: 0px 10px;
         width: 207px;
-        height: 40px;
+        height: 41px;
         background-image: url('templates/tibiacom/images/themeboxes/box_bg.png');
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .discord_button{
-        height: 35px;
-        width: 207x;
+        height: 60px;
+        width: 180px;
         border: 0;
-        background: url('templates/tibiacom/images/themeboxes/button.png');
+        background: url('templates/tibiacom/images/themeboxes/discord-button.png');
         font-family: Verdana;
         font-weight: 100;
         color: #d5c3af;
@@ -40,15 +39,15 @@
         cursor: pointer;
     }
     .discord_button:hover{
-        background: url('templates/tibiacom/images/themeboxes/button_over.png');
+        background: url('templates/tibiacom/images/themeboxes/discord-button_over.png');
         color: #fff;
     }
 </style>
 <div class="discord">
-    <div class="discord_header">Discord</div>
+    <div class="discord_header"></div>
     <div class="discord_content">
         <a href="<?php echo $config['discord_link']; ?>" target="new">
-            <button type="button" class="discord_button">Join Discord</button>
+            <button type="button" class="discord_button"></button>
         </a>
     </div>
     <div class="discord_bottom"></div>

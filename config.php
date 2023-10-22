@@ -307,7 +307,7 @@ $config = array(
 	// status bar
 	'status_bar' => true,
 	'client_link' => 'https://codeload.github.com/dudantas/tibia-client/zip/refs/tags/13.20.13560', // link to download tibia client
-	'discord_link' => 'https://discord.com/invite/gvTj5sh9Mp', // link to join discord channel
+	'discord_link' => 'https://discord.gg/zpKmtaSpYM', // link to join discord channel
 	'whatsapp_link' => '5511912345678', // wa.me/5511912345678
 	'instagram_link' => 'profile', // www.instagram.com/profile
 	'facebook_link' => 'page', // www.facebook.com/page
