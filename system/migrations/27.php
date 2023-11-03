@@ -24,7 +24,7 @@ if($query->rowCount() === 0) {
 <td style=\"width: 33.3333%; height: 18px;\"><em>!example</em></td>
 <td style=\"width: 33.3333%; height: 18px;\">This is just an example</td>
 </tr>
-<tr style=\"height: 18px; background-color: #d4c0a1;\">
+<tr style=\"height: 18px; background-color: #110d0a;\">
 <td style=\"width: 33.3333%; height: 18px;\"><em>!buyhouse</em></td>
 <td style=\"width: 33.3333%; height: 18px;\">Buy house you are looking at</td>
 </tr>

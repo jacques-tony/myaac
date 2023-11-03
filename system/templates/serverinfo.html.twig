@@ -1,4 +1,4 @@
-<script>
+s<script>
 	var countDownDate = new Date("Jan 01, 2023 {{ server_save.0 }}:{{ server_save.1 }}:{{ server_save.2 }}").getTime();
 	var x = setInterval(function() {
 		var now = new Date().getTime();
@@ -51,15 +51,15 @@
 		<p style="font-size: 24px; font-weight: bold; margin: 0;">Server Save<br></p>
 		<small style="margin: 0 0 10px 0;">Every day {{ server_save.0 }}:{{ server_save.1 }}</small>
 		<div style="display: flex;">
-			<div style="padding: 10px; box-shadow: 3px 3px 2px #875f3e; border: 1px solid #5f4d41; background-color: #d4c0a1; border-radius: 5px 0 0 5px;">
+			<div style="padding: 10px; box-shadow: 3px 3px 2px #875f3e; border: 1px solid #110d0a; background-color: #110d0a; border-radius: 5px 0 0 5px;">
 				<label>hours</label>
 				<div id="timerServerSave_hour" style="font-size: 24px; font-weight: bold;"></div>
 			</div>
-			<div style="padding: 10px; box-shadow: 3px 3px 2px #875f3e; border: 1px solid #5f4d41; background-color: #d4c0a1;">
+			<div style="padding: 10px; box-shadow: 3px 3px 2px #875f3e; border: 1px solid #110d0a; background-color: #110d0a;">
 				<label>minutes</label>
 				<div id="timerServerSave_minute" style="font-size: 24px; font-weight: bold;"></div>
 			</div>
-			<div style="padding: 10px; box-shadow: 3px 3px 2px #875f3e; border: 1px solid #5f4d41; background-color: #d4c0a1; border-radius: 0 5px 5px 0;">
+			<div style="padding: 10px; box-shadow: 3px 3px 2px #875f3e; border: 1px solid #110d0a; background-color: #110d0a; border-radius: 0 5px 5px 0;">
 				<label>seconds</label>
 				<div id="timerServerSave_second" style="font-size: 24px; font-weight: bold;"></div>
 			</div>

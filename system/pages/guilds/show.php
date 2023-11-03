@@ -1,7 +1,7 @@
 <style>
 .btn_nick{
 	border-radius: 0 0.3em 0.3em 0;
-    border: 1px solid #5f4d41;
+    border: 1px solid #110d0a;
 	color: #5f4d41;
     background-color: #fff2db;
 }
@@ -12,7 +12,7 @@
 }
 .input_nick{
 	border-radius: 0.3em 0px 0px 0.3em;
-	border: 1px solid #5f4d41;
+	border: 1px solid #110d0a;
 }
 </style>
 <?php

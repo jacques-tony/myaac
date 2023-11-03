@@ -109,7 +109,7 @@ foreach ($auctions as $auction) { /* LOOP AUCTIONS */
     <tr>
         <td>
             <div class="TableContentContainer">
-                <table class="TableContent" style="border:1px solid #faf0d7;" width="100%">
+                <table class="TableContent" style="border:1px solid #110d0a;" width="100%">
                     <tbody>
                     <tr>
                         <td>
@@ -209,7 +209,7 @@ foreach ($auctions as $auction) { /* LOOP AUCTIONS */
                                         <?php }
                                         if ($logged && isset($getAuctionBid['account_id']) && $account_logged == $getAuctionBid['account_id']) { ?>
                                             <div class="ShortAuctionDataBidRow"
-                                                 style="background-color: #d4c0a1; padding: 5px; border: 1px solid #f0e8da; box-shadow: 2px 2px 5px 0 rgb(0 0 0 / 50%);">
+                                                 style="background-color: #110d0a; padding: 5px; border: 1px solid #f0e8da; box-shadow: 2px 2px 5px 0 rgb(0 0 0 / 50%);">
                                                 <div class="ShortAuctionDataLabel">My Bid:</div>
                                                 <div class="ShortAuctionDataValue"><?= $My_Bid ?></div>
                                             </div>

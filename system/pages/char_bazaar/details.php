@@ -182,7 +182,7 @@ $End = date('Y-m-d H:i:s', strtotime($getAuction['date_end']));
                         <tr>
                             <td>
                                 <div class="TableContentContainer">
-                                    <table class="TableContent" style="border:1px solid #faf0d7;" width="100%">
+                                    <table class="TableContent" style="border:1px solid #110d0a;" width="100%">
                                         <tbody>
                                         <tr>
                                             <td>
@@ -276,7 +276,7 @@ $End = date('Y-m-d H:i:s', strtotime($getAuction['date_end']));
                                                             <?php } ?>
                                                             <?php if ($logged && isset($getAuctionBid['account_id']) && $account_logged == $getAuctionBid['account_id']) { ?>
                                                                 <div class="ShortAuctionDataBidRow"
-                                                                     style="background-color: #d4c0a1; padding: 5px; border: 1px solid #f0e8da; box-shadow: 2px 2px 5px 0 rgb(0 0 0 / 50%);">
+                                                                     style="background-color: #110d0a; padding: 5px; border: 1px solid #f0e8da; box-shadow: 2px 2px 5px 0 rgb(0 0 0 / 50%);">
                                                                     <div class="ShortAuctionDataLabel">My Bid:</div>
                                                                     <div
                                                                         class="ShortAuctionDataValue"><?= $My_Bid ?></div>
@@ -483,7 +483,7 @@ $End = date('Y-m-d H:i:s', strtotime($getAuction['date_end']));
                                     <tr>
                                         <td style="vertical-align:top;width:210px;;">
                                             <div class="TableContentContainer">
-                                                <table class="TableContent" style="border:1px solid #faf0d7;"
+                                                <table class="TableContent" style="border:1px solid #110d0a;"
                                                        width="100%">
                                                     <tbody>
                                                     <tr class="Even">
@@ -541,7 +541,7 @@ $End = date('Y-m-d H:i:s', strtotime($getAuction['date_end']));
                                         </td>
                                         <td>
                                             <div class="TableContentContainer">
-                                                <table class="TableContent" style="border:1px solid #faf0d7;"
+                                                <table class="TableContent" style="border:1px solid #110d0a;"
                                                        width="100%">
                                                     <tbody>
                                                     <tr class="Even">
@@ -662,7 +662,7 @@ $End = date('Y-m-d H:i:s', strtotime($getAuction['date_end']));
                         <tr>
                             <td>
                                 <div class="TableContentContainer">
-                                    <table class="TableContent" style="border:1px solid #faf0d7;" width="100%">
+                                    <table class="TableContent" style="border:1px solid #110d0a;" width="100%">
                                         <tbody>
                                         <tr class="Even">
                                             <td><span class="LabelV">Creation Date:</span>
@@ -690,7 +690,7 @@ $End = date('Y-m-d H:i:s', strtotime($getAuction['date_end']));
                         <tr>
                             <td>
                                 <div class="TableContentContainer">
-                                    <table class="TableContent" style="border:1px solid #faf0d7;" width="100%">
+                                    <table class="TableContent" style="border:1px solid #110d0a;" width="100%">
                                         <tbody>
                                         <tr class="Odd">
                                             <td><span class="LabelV">Charm Expansion:</span>
@@ -757,7 +757,7 @@ $End = date('Y-m-d H:i:s', strtotime($getAuction['date_end']));
                         <tr>
                             <td>
                                 <div class="TableContentContainer">
-                                    <table class="TableContent" style="border:1px solid #faf0d7;" width="100%">
+                                    <table class="TableContent" style="border:1px solid #110d0a;" width="100%">
                                         <tbody>
                                         <tr class="Even tmp-container-ItemSummary">
                                             <td>
@@ -853,7 +853,7 @@ $End = date('Y-m-d H:i:s', strtotime($getAuction['date_end']));
                             <tr>
                                 <td>
                                     <div class="TableContentContainer">
-                                        <table class="TableContent" style="border:1px solid #faf0d7;" width="100%">
+                                        <table class="TableContent" style="border:1px solid #110d0a;" width="100%">
                                             <tbody>
                                             <?php foreach ($charmNames as $k => $charm) { ?>
                                                 <tr class="<?= $k % 2 == 0 ? 'Even' : 'Odd' ?>">
@@ -916,7 +916,7 @@ $End = date('Y-m-d H:i:s', strtotime($getAuction['date_end']));
                             <tr>
                                 <td>
                                     <div class="TableContentContainer">
-                                        <table class="TableContent" style="border:1px solid #faf0d7;" width="100%">
+                                        <table class="TableContent" style="border:1px solid #110d0a;" width="100%">
                                             <tbody>
                                             <tr class="LabelH">
                                                 <td>Quest Line Name</td>

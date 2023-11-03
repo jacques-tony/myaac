@@ -790,8 +790,8 @@ img {
   margin: 5px;
   margin-bottom: 18px;
   color: #5A2800;
-  border-left: 2px solid #3a3738;
-  border-right: 2px solid #3a3738;
+  border-left: 2px solid #793d03;
+  border-right: 2px solid #793d03;
   background-color: #110d0a;
   background-repeat: no-repeat;
   overflow: visible;
@@ -1265,7 +1265,7 @@ img {
   position: relative;
   color: red;
   height: 100%;
-  background-color: #d4c0a1;
+  background-color: #110d0a;
   padding: 5px;
   padding-left: 43px;
 }
@@ -1273,7 +1273,7 @@ img {
   font-size: 10pt;
   position: relative;
   height: 100%;
-  background-color: #d4c0a1;
+  background-color: #110d0a;
   padding: 10px;
 }
 .SmallBox .ErrorMessage ul {
@@ -1498,7 +1498,7 @@ img {
 }
 .TableContainer .CaptionContainer .CaptionInnerContainer {
 	position: relative;
-  background-color: #5f4d41;
+  background-color: #271402;
   width: 100%;
   height: 100%;
   padding-top: 3px;
@@ -1592,11 +1592,11 @@ img {
 }
 /* TABLE CONTENT */
 .TableContentContainer {
-  border: 1px solid #5F4D41;
+  border: 1px solid #110d0a;
   position: relative;
   margin-right: 4px;
   height: 100%;
-  background-color: #d4c0a1;
+  background-color: #110d0a;
   padding: 0px;
 }
 .TableContent {
@@ -1612,8 +1612,8 @@ img {
 /* INNERLYOUT 1 */
 .TableContainer .Table1 {
   width: 100%;
-  background-color: #d4c0a1;
-  border: 2px solid #55636c;
+  background-color: #110d0a;
+  border: 2px solid #793d03;
 }
 .TableContainer .Table1 .InnerTableContainer {
   padding: 5px;
@@ -1621,8 +1621,8 @@ img {
 /* INNERLYOUT 2 */
 .TableContainer .Table2 {
   width: 100%;
-  border: 2px solid #55636c;
-  background-color: #f1e0c5;
+  border: 2px solid #793d03;
+  background-color: #110d0a;
   padding: 0px;
   margin: 0px;
   border-collapse: collapse;
@@ -1642,13 +1642,13 @@ img {
   padding-left: 5px;
   padding-bottom: 2px;
   padding-right: 5px;
-  border: 1px solid #faf0d7;
+  border: 1px solid #110d0a;
 }
 /* INNERLYOUT 3 */
 .TableContainer .Table3 {
   width: 100%;
-  border: 2px solid #55636c;
-  background-color: #f1e0c5;
+  border: 2px solid #793d03;
+  background-color: #110d0a;
 }
 .TableContainer .Table3 .InnerTableContainer {
   width: 100%;
@@ -1657,13 +1657,13 @@ img {
   margin-left: 3px;
 }
 .TableContainer .Table3 .TableContentAndRightShadow td {
-  border: 1px solid #faf0d7;
+  border: 1px solid #110d0a;
 }
 /* INNERLYOUT 4 */
 .TableContainer .Table4 {
   width: 100%;
-  border: 2px solid #55636c;
-  background-color: #f1e0c5;
+  border: 2px solid #793d03;
+  background-color: #110d0a;
 }
 .TableContainer .Table4 .InnerTableContainer {
   width: 100%;
@@ -1678,8 +1678,8 @@ img {
 /* INNERLYOUT 5 */
 .TableContainer .Table5 {
   width: 100%;
-  border: 2px solid #55636c;
-  background-color: #f1e0c5;
+  border: 2px solid #793d03;
+  background-color: #110d0a;
 }
 .TableContainer .Table5 .InnerTableContainer {
   width: 100%;
@@ -1762,19 +1762,17 @@ img {
 }
 /* LABELS */
 .InnerTableContainer .TableContentContainer {
-    box-shadow: 3px 3px 2px #875f3e;
 }
 .TableContentContainer {
-    border: 1px solid #5f4d41;
     position: relative;
     margin-right: 7px;
     margin-bottom: 5px;
     height: 100%;
-    background-color: #d4c0a1;
+    background-color: #110d0a;
     padding: 0;
 }
 .TableContainer .Table3 .TableContent td {
-    border: 1px solid #faf0d7;
+    border: 1px solid #110d0a;
 }
 
 
@@ -2209,7 +2207,7 @@ img {
 .moduleRow { }
 
 .moduleRowOver {
-	background-color: #D4C0A1;
+	background-color: #110d0a;
 	cursor: pointer;
 	cursor: hand;
 }

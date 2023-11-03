@@ -13,7 +13,7 @@
     box-shadow: 2px 2px 3px 3px #7c5231;
 }
 #eventscheduletable td {
-    border: 1px solid #faf0d7;
+    border: 1px solid #110d0a;
     height: 24px;
     overflow: hidden;
 	font-weight: bold;
@@ -59,7 +59,7 @@ td#dia_atual{
 }
 td#dia_branco{
 	color: #5f4d41;
-	background-color: #d4c0a1;
+	background-color: #110d0a;
 }
 </style>
 

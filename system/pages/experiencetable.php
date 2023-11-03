@@ -1,6 +1,6 @@
 <style>
 #PantheonEventAllLocationsTable .AdditionalTableShadow, #ExperienceTable .AdditionalTableShadow {
-    border: 1px solid #5f4d41;
+    border: 1px solid #110d0a;
     box-shadow: 3px 3px 2px #875f3e;
     margin-right: 5px;
     margin-bottom: 5px;
