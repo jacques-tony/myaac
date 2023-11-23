@@ -30,7 +30,7 @@ $config = array(
 	 * WARNING2: on 'dev' all PHP errors/warnings are displayed
 	 * Recommended: 'prod' cause of speed (page load time is better)
 	 */
-	'env' => 'prod', // 'prod' for production and 'dev' for development
+	'env' => 'dev', // 'prod' for production and 'dev' for development
 
 	'template' => 'tibiacom', // template used by website (kathrine, tibiacom)
 	'template_allow_change' => false, // allow users to choose their own template while browsing website?
