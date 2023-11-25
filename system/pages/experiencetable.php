@@ -1,12 +1,12 @@
 <style>
 #PantheonEventAllLocationsTable .AdditionalTableShadow, #ExperienceTable .AdditionalTableShadow {
-    border: 1px solid #5f4d41;
-    box-shadow: 3px 3px 2px #875f3e;
+    border: 1px solid #291e10;
+    box-shadow: 3px 3px 2px #100b07;
     margin-right: 5px;
     margin-bottom: 5px;
 }
 .AdditionalTableHeadline {
-    background-color: #d5c0a1;
+    background-color: #1f1a12;
 }
 .AdditionalTableHeadline td {
     border: 1px solid #faf0d7;

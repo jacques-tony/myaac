@@ -52,7 +52,7 @@ if ($logged) {
                                     <div class="TableContentContainer">
                                         <table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
                                             <tbody>
-                                            <tr bgcolor="#F1E0C6">
+                                            <tr bgcolor="#080300">
                                                 <td>Please logout before attempting to create a new account.</td>
                                             </tr>
                                             </tbody>

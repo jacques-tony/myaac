@@ -64,17 +64,17 @@
     <small style="margin: 0 0 10px 0;">Every day {{ serverSave.0 }}:{{ serverSave.1 }}</small>
     <div style="display: flex;">
       <div
-        style="padding: 10px; box-shadow: 3px 3px 2px #875f3e; border: 1px solid #5f4d41; background-color: #d4c0a1; border-radius: 5px 0 0 5px;">
+        style="padding: 10px; box-shadow: 3px 3px 2px #100b07; border: 1px solid #291e10; background-color: #080300; border-radius: 5px 0 0 5px;">
         <label>hours</label>
         <div id="timerServerSave_hour" style="font-size: 24px; font-weight: bold;"></div>
       </div>
       <div
-        style="padding: 10px; box-shadow: 3px 3px 2px #875f3e; border: 1px solid #5f4d41; background-color: #d4c0a1;">
+        style="padding: 10px; box-shadow: 3px 3px 2px #100b07; border: 1px solid #291e10; background-color: #080300;">
         <label>minutes</label>
         <div id="timerServerSave_minute" style="font-size: 24px; font-weight: bold;"></div>
       </div>
       <div
-        style="padding: 10px; box-shadow: 3px 3px 2px #875f3e; border: 1px solid #5f4d41; background-color: #d4c0a1; border-radius: 0 5px 5px 0;">
+        style="padding: 10px; box-shadow: 3px 3px 2px #100b07; border: 1px solid #291e10; background-color: #080300; border-radius: 0 5px 5px 0;">
         <label>seconds</label>
         <div id="timerServerSave_second" style="font-size: 24px; font-weight: bold;"></div>
       </div>
@@ -122,40 +122,40 @@
                           <div class="TableContentContainer">
                             <table class="TableContent" width="100%">
                               <tbody>
-                              <tr bgcolor="#D4C0A1">
+                              <tr bgcolor="#080300">
                                 <td><b>IP:</b> {{ serverIp }} (Port: {{ config.lua.loginPort }})</td>
                               </tr>
-                              <tr bgcolor="#F1E0C6">
+                              <tr bgcolor="#080300">
                                 <td><b>Client: </b> {{ clientVersion }}</td>
                               </tr>
-                              <tr bgcolor="#D4C0A1">
+                              <tr bgcolor="#080300">
                                 <td><b>Uptime:</b> {{ status.uptimeReadable }} </td>
                               </tr>
-                              <tr bgcolor="#F1E0C6">
+                              <tr bgcolor="#080300">
                                 <td><b>Global save: </b> {{ serverSave.0 }}:{{ serverSave.1 }}</td>
                               </tr>
-                              <tr bgcolor="#D4C0A1">
+                              <tr bgcolor="#080300">
                                 <td><b>World type:</b> {{ config.lua.worldType|upper }}</td>
                               </tr>
-                              <tr bgcolor="#F1E0C6">
+                              <tr bgcolor="#080300">
                                 <td><b>Protection level: </b> {{ protectionLevel }}</td>
                               </tr>
-                              <tr bgcolor="#D4C0A1">
+                              <tr bgcolor="#080300">
                                 <td><b>Loot: </b> x{{ rateLoot }}</td>
                               </tr>
-                              <tr bgcolor="#F1E0C6">
+                              <tr bgcolor="#080300">
                                 <td><b>Spawn:</b> x{{ rateSpawn }}</td>
                               </tr>
-                              <tr bgcolor="#D4C0A1">
+                              <tr bgcolor="#080300">
                                 <td><b>House rent: </b> {{ houseRent }}
                                   <br>{% if houseOld %}Houses with inactive owners are cleaned after 30 days.{% endif %}
                                 </td>
                               </tr>
-                              <tr bgcolor="#F1E0C6">
+                              <tr bgcolor="#080300">
                                 <td><b>Level to create guild: </b> {{ config.guild_need_level }}</td>
                               </tr>
                               {% if houseLevel %}
-                                <tr bgcolor="#D4C0A1">
+                                <tr bgcolor="#080300">
                                   <td><b>Level to buy house:</b> {{ houseLevel }}</td>
                                 </tr>
                               {% endif %}
@@ -222,13 +222,13 @@
                             <div class="TableContentContainer">
                               <table class="TableContent" width="100%">
                                 <tbody>
-                                <tr bgcolor="#D4C0A1">
+                                <tr bgcolor="#080300">
                                   <td><b>Exp Rate:</b> x{{ rateExp }}</td>
                                 </tr>
-                                <tr bgcolor="#F1E0C6">
+                                <tr bgcolor="#080300">
                                   <td><b>Magic Level: </b> x{{ rateMagic }}</td>
                                 </tr>
-                                <tr bgcolor="#D4C0A1">
+                                <tr bgcolor="#080300">
                                   <td><b>Skills:</b> x{{ rateSkill }}</td>
                                 </tr>
                                 </tbody>
@@ -499,7 +499,7 @@
                           <div class="TableContentContainer">
                             <table class="TableContent" width="100%">
                               <tbody>
-                              <tr bgcolor="#D4C0A1">
+                              <tr bgcolor="#080300">
                                 <td><b>PZ Lock:</b> {{ pzLocked / (60 * 1000) }} min</td>
                               </tr>
                               {% set whiteSkullTime = 7 * 60 %}
@@ -508,7 +508,7 @@
                               {% set hours = (whiteSkullTime % (24 * 60)) // 60 %}
                               {% set minutes = whiteSkullTime % 60 %}
                               {% set seconds = 0 %}
-                              <tr bgcolor="#F1E0C6">
+                              <tr bgcolor="#080300">
                                 <td>
                                   <b>Frag Duration:</b>
                                   {% if days > 0 %} {{ days }} days {% endif %}
@@ -517,23 +517,23 @@
                                   {% if seconds > 0 %} {{ seconds }} segs {% endif %}
                                 </td>
                               </tr>
-                              <tr bgcolor="#D4C0A1">
+                              <tr bgcolor="#080300">
                                 <td><b>RedSkull Duration:</b> {{ redSkullDuration }} days</td>
                               </tr>
                               {% if blackSkullDuration %}
-                                <tr bgcolor="#F1E0C6">
+                                <tr bgcolor="#080300">
                                   <td><b>BlackSkull Duration: </b> {{ blackSkullDuration }} days</td>
                                 </tr>
                               {% endif %}
                               {% if dailyFragsToRedSkull is defined %}
-                                <tr bgcolor="#D4C0A1">
+                                <tr bgcolor="#080300">
                                   <td><b>Red skull:</b>
                                     {{ dailyFragsToRedSkull }} daily /
                                     {{ weeklyFragsToRedSkull }} weekly /
                                     {{ monthlyFragsToRedSkull }} monthly
                                   </td>
                                 </tr>
-                                <tr bgcolor="#F1E0C6">
+                                <tr bgcolor="#080300">
                                   <td><b>Black skull:</b>
                                     {{ dailyFragsToRedSkull * 2 }} daily /
                                     {{ weeklyFragsToRedSkull * 2 }} frags weekly /

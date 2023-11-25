@@ -252,9 +252,9 @@ if ($config['backward_support']) {
     if (!isset($config['vdarkborder']))
         $config['vdarkborder'] = '#505050';
     if (!isset($config['darkborder']))
-        $config['darkborder'] = '#D4C0A1';
+        $config['darkborder'] = '#080300';
     if (!isset($config['lightborder']))
-        $config['lightborder'] = '#F1E0C6';
+        $config['lightborder'] = '#080300';
 
     $config['site']['download_page'] = true;
     $config['site']['serverinfo_page'] = true;

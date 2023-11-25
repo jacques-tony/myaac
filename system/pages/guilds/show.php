@@ -1,18 +1,18 @@
 <style>
 .btn_nick{
 	border-radius: 0 0.3em 0.3em 0;
-    border: 1px solid #5f4d41;
-	color: #5f4d41;
+    border: 1px solid #291e10;
+	color: #291e10;
     background-color: #fff2db;
 }
 .btn_nick:hover{
     border: 1px solid #fff2db;
 	color: #fff2db;
-    background-color: #5f4d41;
+    background-color: #291e10;
 }
 .input_nick{
 	border-radius: 0.3em 0px 0px 0.3em;
-	border: 1px solid #5f4d41;
+	border: 1px solid #291e10;
 }
 </style>
 <?php

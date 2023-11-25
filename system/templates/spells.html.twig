@@ -83,9 +83,9 @@
 										{% set c = 0 %}
 										{% for spell in spells %}
 											{% if (c % 2) == 0 %}
-												<tr bgcolor="#F1E0C6">
+												<tr bgcolor="#080300">
 											{% else %}
-												<tr bgcolor="#D4C0A1">
+												<tr bgcolor="#080300">
 											{% endif %}
 											<td>
 												<a href="?subtopic=spells&spell={{ spell.name }}">
@@ -146,13 +146,13 @@
 									<div class="TableContentContainer">
 										<table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
 											<tbody>
-											<tr bgcolor="#D4C0A1">
+											<tr bgcolor="#080300">
 												<td width="25%"><b>Vocation</b></td>
 												<td width="25%"><b>Group</b></td>
 												<td width="25%"><b>Type</b></td>
 												<td width="25%"><b>Premium</b></td>
 											</tr>
-											<tr bgcolor="#D4C0A1">
+											<tr bgcolor="#080300">
 												<td valign="top">
 													<input type="radio" name="vocation" value="" checked=""> all<br>
 													<input type="radio" name="vocation" value="Druid" {{ post.vocation == 'Druid' ? 'checked' : '' }}> Druid<br>
@@ -177,7 +177,7 @@
 													<input type="radio" name="premium" value="yes" {{ post.premium == 'yes' ? 'checked' : '' }}> yes
 												</td>
 											</tr>
-											<tr bgcolor="#D4C0A1">
+											<tr bgcolor="#080300">
 												<td colspan="4">Sort by:
 													<select name="sort">
 														<option value="name" selected="">Name</option>

@@ -22,8 +22,8 @@
                       <table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
                         <tbody>
                           <tr>
-                            <td bgcolor="#D4C0A1" class="ff_std" colspan="1" align="left" valign="top"><b>Tibia Character:</b></td>
-                            <td bgcolor="#D4C0A1" class="ff_std" colspan="1" align="left">
+                            <td bgcolor="#080300" class="ff_std" colspan="1" align="left" valign="top"><b>Tibia Character:</b></td>
+                            <td bgcolor="#080300" class="ff_std" colspan="1" align="left">
 								<select name="char_id"><option value="0">(Choose Character)</option>
 									{% for player in players %}
 									<option value="{{ player.id }}"{% if player.id == post_player_id %} selected="selected"{% endif %}>{{ player.name }}</option>
@@ -32,13 +32,13 @@
                               </td>
                           </tr>
                           <tr>
-                            <td bgcolor="#F1E0C6" class="ff_std" colspan="1" align="left" valign="top"><b>Topic:</b></td>
-                            <td bgcolor="#F1E0C6" class="ff_std" colspan="1" align="left"><input type="text" name="topic" value="{{ post_thread|escape }}" size="40" maxlength="60" />
+                            <td bgcolor="#080300" class="ff_std" colspan="1" align="left" valign="top"><b>Topic:</b></td>
+                            <td bgcolor="#080300" class="ff_std" colspan="1" align="left"><input type="text" name="topic" value="{{ post_thread|escape }}" size="40" maxlength="60" />
                               <font class="ff_info"> (Optional)</font></td>
                           </tr>
                           <tr>
-                            <td bgcolor="#D4C0A1" class="ff_std" colspan="1" align="left" valign="top"><b>Topic Icon:</b></td>
-                            <td bgcolor="#D4C0A1" class="ff_std" colspan="1" align="left"><input type="radio" name="forum_iconid" value="1">
+                            <td bgcolor="#080300" class="ff_std" colspan="1" align="left" valign="top"><b>Topic Icon:</b></td>
+                            <td bgcolor="#080300" class="ff_std" colspan="1" align="left"><input type="radio" name="forum_iconid" value="1">
                               &nbsp;<img src="{{ template_path }}/images/global/forum/icons/27.gif" border="0" width="15" height="15" alt="Post">&nbsp;&nbsp;&nbsp;
                               <input type="radio" name="forum_iconid" value="2">
                               &nbsp;<img src="{{ template_path }}/images/global/forum/icons/26.gif" border="0" width="15" height="15" alt="Arrow">&nbsp;&nbsp;&nbsp;
@@ -76,7 +76,7 @@
                               &nbsp;No Icon</td>
                           </tr>
                           <tr>
-                            <td bgcolor="#F1E0C6" class="ff_std" colspan="1" align="left" valign="top"><b>Message:</b><br>
+                            <td bgcolor="#080300" class="ff_std" colspan="1" align="left" valign="top"><b>Message:</b><br>
                               <font class="ff_info">You can use:<br>
 								<b>[player]</b>Nick<b>[/player]</b><br>
 								<b>[url]</b>http://address.com/<b>[/url]</b><br>
@@ -132,12 +132,12 @@
                                 </tbody>
                               </table>
                               </font></td>
-                            <td bgcolor="#F1E0C6" class="ff_std" colspan="1" align="left"><textarea rows="20" maxlength="15000" cols="55" name="text">{{ post_text|escape }}</textarea>
+                            <td bgcolor="#080300" class="ff_std" colspan="1" align="left"><textarea rows="20" maxlength="15000" cols="55" name="text">{{ post_text|escape }}</textarea>
                               <div id="forum_pt_lenght">Max 15.000 letters.</div></td>
                           </tr>
                           <tr>
-                            <td bgcolor="#D4C0A1" class="ff_std" colspan="1" align="left" valign="top"><b>Options:</b></td>
-                            <td bgcolor="#D4C0A1" class="ff_info" colspan="1" align="left">
+                            <td bgcolor="#080300" class="ff_std" colspan="1" align="left" valign="top"><b>Options:</b></td>
+                            <td bgcolor="#080300" class="ff_info" colspan="1" align="left">
                               <input type="checkbox" name="smile" value="1"{% if post_smile %} checked="checked"{% endif %}/>
                               &nbsp;<b>Disable Smileys in This Post </b><br>
 							  {% if canEdit %}

@@ -50,7 +50,7 @@
         position: absolute;
         right: 22px;
         margin-top: -12px;
-        background-color: #5f4d41;
+        background-color: #291e10;
         color: #fff;
         cursor: pointer;
     }

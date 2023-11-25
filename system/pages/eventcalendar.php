@@ -5,8 +5,8 @@
     border-spacing: 1px;
     padding: 1px;
     border: 1px;
-	background: #d4c0a1;
-    border-color: #5f4d41;
+	background: #080300;
+    border-color: #291e10;
     -moz-box-shadow: 2px 2px 3px 3px #7c5231;
     -webkit-box-shadow: 2px 2px 3px 3px #7c5231;
     -ms-box-shadow: 2px 2px 3px 3px #7c5231;
@@ -50,16 +50,16 @@
 
 
 td#dia_comum {
-	color: #5f4d41;
+	color: #291e10;
 	 background-color:#E7D1AF;
 }
 td#dia_atual{
-	color: #5f4d41;
+	color: #291e10;
 	background-color: #f3e5d0;
 }
 td#dia_branco{
-	color: #5f4d41;
-	background-color: #d4c0a1;
+	color: #291e10;
+	background-color: #080300;
 }
 </style>
 
@@ -127,7 +127,7 @@ function MostreCalendario($mes){
 
 	$diasemana = jddayofweek( cal_to_jd(CAL_GREGORIAN, $mes,"01",date('Y')) , 0 );	// função que descobre o dia da semana
 
-	 echo "<tr style='text-align:center; width:120px; background-color:#5f4d41;'>";
+	 echo "<tr style='text-align:center; width:120px; background-color:#291e10;'>";
 	   MostreSemanas();	// função que mostra as semanas aqui
 	 echo "</tr>";
 	for( $linha = 0; $linha < 5; $linha++ ){

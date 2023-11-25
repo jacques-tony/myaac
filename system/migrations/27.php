@@ -20,15 +20,15 @@ if($query->rowCount() === 0) {
 <td style=\"width: 33.3333%; background-color: #505050; height: 18px;\"><span style=\"color: #ffffff;\"><strong>Words</strong></span></td>
 <td style=\"width: 33.3333%; background-color: #505050; height: 18px;\"><span style=\"color: #ffffff;\"><strong>Description</strong></span></td>
 </tr>
-<tr style=\"height: 18px; background-color: #f1e0c6;\">
+<tr style=\"height: 18px; background-color: #080300;\">
 <td style=\"width: 33.3333%; height: 18px;\"><em>!example</em></td>
 <td style=\"width: 33.3333%; height: 18px;\">This is just an example</td>
 </tr>
-<tr style=\"height: 18px; background-color: #d4c0a1;\">
+<tr style=\"height: 18px; background-color: #080300;\">
 <td style=\"width: 33.3333%; height: 18px;\"><em>!buyhouse</em></td>
 <td style=\"width: 33.3333%; height: 18px;\">Buy house you are looking at</td>
 </tr>
-<tr style=\"height: 18px; background-color: #f1e0c6;\">
+<tr style=\"height: 18px; background-color: #080300;\">
 <td style=\"width: 33.3333%; height: 18px;\"><em>!aol</em></td>
 <td style=\"width: 33.3333%; height: 18px;\">Buy AoL</td>
 </tr>

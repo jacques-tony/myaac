@@ -408,7 +408,7 @@
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, .2);
     outline: 0;
-    border: 1px solid #5f4d41;
+    border: 1px solid #291e10;
     box-shadow: 0px 0px 100px #000;
 }
 
@@ -923,7 +923,7 @@
 .Content .BoxContent td {
     font-family: Verdana, Arial, Times New Roman, sans-serif;
     font-size: 10pt;
-    color: #5a2800;
+    color: #ff7100;
 }
 
 .LabelV120 {
@@ -940,17 +940,17 @@
 }
 
 .TableContentContainer {
-    border: 1px solid #5f4d41;
+    border: 1px solid #291e10;
     position: relative;
     margin-right: 7px;
     margin-bottom: 5px;
     height: 100%;
-    background-color: #d4c0a1;
+    background-color: #080300;
     padding: 0;
 }
 
 .InnerTableContainer .TableContentContainer {
-    box-shadow: 3px 3px 2px #875f3e;
+    box-shadow: 3px 3px 2px #100b07;
 }
 
 .AuctionLinks {
@@ -978,7 +978,7 @@
     align-content: stretch;
     margin-top: 5px;
     padding-top: 5px;
-    border-top: 1px dashed #5a2800;
+    border-top: 1px dashed #ff7100;
 }
 
 .AuctionOutfit {
@@ -996,8 +996,8 @@
     flex-shrink: 0;
     order: 0;
     padding: 1px;
-    background-color: #f1e0c6;
-    border: 1px solid #5a2800;
+    background-color: #080300;
+    border: 1px solid #ff7100;
     box-shadow: 2px 2px 5px 0 rgb(0 0 0 / 75%);
     float: left;
     margin-right: 10px;
@@ -1052,8 +1052,8 @@
     position: relative;
     z-index: 150;
     cursor: help;
-    background-color: #d5c0a1;
-    border: 1px solid #5a2800;
+    background-color: #1f1a12;
+    border: 1px solid #ff7100;
     margin: auto;
     padding: 1px;
     width: 64px;
@@ -1089,8 +1089,8 @@
     padding-top: 2px;
     padding-bottom: 2px;
     text-align: left;
-    background-color: #f1e0c6;
-    border: 1px solid #5a2800;
+    background-color: #080300;
+    border: 1px solid #ff7100;
     box-shadow: 2px 2px 5px 0 rgb(0 0 0 / 50%);
 }
 
@@ -1100,7 +1100,7 @@
     right: 10px;
     width: 200px;
     text-align: right;
-    background-color: #f1e0c6;
+    background-color: #080300;
     color: red;
 }
 
@@ -1124,8 +1124,8 @@
     margin-left: 10px;
     padding: 5px;
     text-align: center;
-    background-color: #f1e0c6;
-    border: 1px solid #5a2800;
+    background-color: #080300;
+    border: 1px solid #ff7100;
     box-shadow: 2px 2px 5px 0 rgb(0 0 0 / 50%);
     display: flex;
     flex-direction: column;
@@ -1157,8 +1157,8 @@
     align-content: stretch;
     align-items: center;
     padding: 10px;
-    background-color: #f1e0c6;
-    border: 1px solid #5a2800;
+    background-color: #080300;
+    border: 1px solid #ff7100;
     box-shadow: 2px 2px 5px 0 rgb(0 0 0 / 50%);
 }
 
@@ -1181,8 +1181,8 @@
     padding-bottom: 6px;
     padding-top: 3px;
     padding-bottom: 0;
-    background-color: #d5c0a1;
-    border: 1px solid #5a2800;
+    background-color: #1f1a12;
+    border: 1px solid #ff7100;
 }
 
 .BlockPage {
@@ -1210,7 +1210,7 @@
 .PercentageBar {
     position: absolute;
     height: 18px;
-    background-color: #5f4d41;
+    background-color: #291e10;
     top: 1px;
 }
 

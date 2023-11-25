@@ -565,7 +565,7 @@ if ($status['online']) {
                             </div>
                             <!-- COLLAPSE STATUS BAR -->
                             <?php if ($config['collapse_status'] == true) { ?>
-                                <div class="collapse" id="statusbar" style="background-color: #d4c0a1;">
+                                <div class="collapse" id="statusbar" style="background-color: #080300;">
                                     <table class="Table3" cellpadding="0" cellspacing="0" style="width: 100%;">
                                         <tbody>
                                         <tr>
@@ -581,7 +581,7 @@ if ($status['online']) {
                                                                         <table class="TableContent" width="100%"
                                                                                style="border:1px solid #faf0d7; font-size: 12px;">
                                                                             <tbody>
-                                                                            <tr bgcolor="#F1E0C6">
+                                                                            <tr bgcolor="#080300">
                                                                                 <td>
                                                                                     <div class="container">
                                                                                         <div
