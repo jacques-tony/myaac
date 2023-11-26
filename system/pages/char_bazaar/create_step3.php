@@ -148,7 +148,7 @@ if (isset($_POST['auction_submit']) && isset($_POST['auction_character'])) {
                             <tr>
                                 <td>
                                     <div class="TableContentContainer">
-                                        <table class="TableContent" style="border:1px solid #faf0d7;" width="100%">
+                                        <table class="TableContent" style="border:1px solid #291e10;" width="100%">
                                             <tbody>
                                             <tr>
                                                 <td style="font-weight:normal;">
@@ -212,7 +212,7 @@ if (isset($_POST['auction_submit']) && isset($_POST['auction_character'])) {
                             <tr>
                                 <td>
                                     <div class="TableContentContainer">
-                                        <table class="TableContent" style="border:1px solid #faf0d7;" width="100%">
+                                        <table class="TableContent" style="border:1px solid #291e10;" width="100%">
                                             <tbody>
                                             <tr>
                                                 <td>
@@ -237,7 +237,7 @@ if (isset($_POST['auction_submit']) && isset($_POST['auction_character'])) {
                                         <tr>
                                             <td style="vertical-align:top;width:210px;;">
                                                 <div class="TableContentContainer">
-                                                    <table class="TableContent" style="border:1px solid #faf0d7;"
+                                                    <table class="TableContent" style="border:1px solid #291e10;"
                                                            width="100%">
                                                         <tbody>
                                                         <tr class="Even">
@@ -294,7 +294,7 @@ if (isset($_POST['auction_submit']) && isset($_POST['auction_character'])) {
                                             </td>
                                             <td>
                                                 <div class="TableContentContainer">
-                                                    <table class="TableContent" style="border:1px solid #faf0d7;"
+                                                    <table class="TableContent" style="border:1px solid #291e10;"
                                                            width="100%">
                                                         <tbody>
                                                         <tr class="Even">
@@ -415,7 +415,7 @@ if (isset($_POST['auction_submit']) && isset($_POST['auction_character'])) {
                             <tr>
                                 <td>
                                     <div class="TableContentContainer">
-                                        <table class="TableContent" style="border:1px solid #faf0d7;" width="100%">
+                                        <table class="TableContent" style="border:1px solid #291e10;" width="100%">
                                             <tbody>
                                             <tr class="Even">
                                                 <td><span class="LabelV">Creation Date:</span>
@@ -451,7 +451,7 @@ if (isset($_POST['auction_submit']) && isset($_POST['auction_character'])) {
                             <tr>
                                 <td>
                                     <div class="TableContentContainer">
-                                        <table class="TableContent" style="border:1px solid #faf0d7;" width="100%">
+                                        <table class="TableContent" style="border:1px solid #291e10;" width="100%">
                                             <tbody>
                                             <tr class="Odd">
                                                 <td><span class="LabelV">Charm Expansion:</span>
@@ -483,7 +483,7 @@ if (isset($_POST['auction_submit']) && isset($_POST['auction_character'])) {
                                 <tr>
                                     <td>
                                         <div class="TableContentContainer">
-                                            <table class="TableContent" style="border:1px solid #faf0d7;"
+                                            <table class="TableContent" style="border:1px solid #291e10;"
                                                    width="100%">
                                                 <tbody>
                                                 <tr>

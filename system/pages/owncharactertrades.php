@@ -83,7 +83,7 @@ if ($logged) {
                         <tr>
                             <td>
                                 <div class="TableContentContainer">
-                                    <table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+                                    <table class="TableContent" width="100%" style="border:1px solid #291e10;">
                                         <tbody>
                                         <tr class="Odd">
                                             <td class="LabelV">Name</td>

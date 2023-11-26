@@ -70,7 +70,7 @@ Let us and the Tibia community know what you think! Click on an active poll from
 						<tbody>
 <tr><td>
 <div class="TableContentContainer">
-<table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+<table class="TableContent" width="100%" style="border:1px solid #291e10;">
 <tbody>
 <tr bgcolor="#080300">
 <td class="LabelV175" width="70%">Topic</td>
@@ -135,7 +135,7 @@ Let us and the Tibia community know what you think! Click on an active poll from
 						<tbody>
 <tr><td>
 <div class="TableContentContainer">
-<table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+<table class="TableContent" width="100%" style="border:1px solid #291e10;">
 <tbody>
 <tr bgcolor="#080300">
 <td class="LabelV175" width="70%">Topic</td>

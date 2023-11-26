@@ -26,8 +26,8 @@ Remember you can also check the respective skill bar in your skill window of the
 						  {% for level in i * config.experiencetable_rows + 1..i * config.experiencetable_rows + (config.experiencetable_rows + 1) - 1 %}
 						  {% set rows = rows + 1 %}
                           <tr bgcolor="{{ getStyle(rows) }}">
-                            <td style="border: 1px solid #FAF0D7; text-align: right;">{{ level }}</td>
-                            <td style="border: 1px solid #FAF0D7; text-align: right;">{{ experience[level] }}</td>
+                            <td style="border: 1px solid #291e10; text-align: right;">{{ level }}</td>
+                            <td style="border: 1px solid #291e10; text-align: right;">{{ experience[level] }}</td>
                           </tr>
 						  {% endfor %}
                         </tbody>

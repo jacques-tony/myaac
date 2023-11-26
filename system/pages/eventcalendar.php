@@ -13,7 +13,7 @@
     box-shadow: 2px 2px 3px 3px #7c5231;
 }
 #eventscheduletable td {
-    border: 1px solid #faf0d7;
+    border: 1px solid #291e10;
     height: 24px;
     overflow: hidden;
 	font-weight: bold;

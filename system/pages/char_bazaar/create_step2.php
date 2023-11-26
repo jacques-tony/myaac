@@ -237,7 +237,7 @@ if (isset($_POST['auction_submit']) && isset($_POST['auction_character'])) {
                                                 <td>
                                                     <div class="TableContentContainer">
                                                         <table class="TableContent"
-                                                               style="border:1px solid #faf0d7;" width="100%">
+                                                               style="border:1px solid #291e10;" width="100%">
                                                             <tbody>
                                                             <tr>
                                                                 <td style="vertical-align: middle;"><?= $verif_coins; ?></td>

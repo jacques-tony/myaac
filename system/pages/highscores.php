@@ -256,7 +256,7 @@ if(empty($rank_vocation)){
               <tbody>
                 <tr>
                   <td><div class="TableContentContainer">
-                      <table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+                      <table class="TableContent" width="100%" style="border:1px solid #291e10;">
                         <tbody>
                           <tr class="LabelH">
                             <td>Rank</td>

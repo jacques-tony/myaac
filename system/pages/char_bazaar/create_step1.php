@@ -103,7 +103,7 @@ $account_players = $account_logged->getPlayersList();
                             <tr>
                                 <td>
                                     <div class="TableContentContainer">
-                                        <table class="TableContent" style="border:1px solid #faf0d7;" width="100%">
+                                        <table class="TableContent" style="border:1px solid #291e10;" width="100%">
                                             <tbody>
                                             <tr>
                                                 <td>

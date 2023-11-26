@@ -160,7 +160,7 @@ if (!empty($_POST['auction_price']) && !empty($_POST['auction_days'])) {
                             <tr>
                                 <td>
                                     <div class="TableContentContainer">
-                                        <table class="TableContent" style="border:1px solid #faf0d7;" width="100%">
+                                        <table class="TableContent" style="border:1px solid #291e10;" width="100%">
                                             <tbody>
                                             <tr>
                                                 <td style="font-weight:normal;"><?= $getAccount['coins'] ?> <img
@@ -222,7 +222,7 @@ if (!empty($_POST['auction_price']) && !empty($_POST['auction_days'])) {
                             <tr>
                                 <td>
                                     <div class="TableContentContainer">
-                                        <table class="TableContent" style="border:1px solid #faf0d7;" width="100%">
+                                        <table class="TableContent" style="border:1px solid #291e10;" width="100%">
                                             <tbody>
                                             <tr>
                                                 <td style="font-weight:bold;">Auction Start Price:</td>
@@ -261,7 +261,7 @@ if (!empty($_POST['auction_price']) && !empty($_POST['auction_days'])) {
                             <tr>
                                 <td>
                                     <div class="TableContentContainer">
-                                        <table class="TableContent" style="border:1px solid #faf0d7;" width="100%">
+                                        <table class="TableContent" style="border:1px solid #291e10;" width="100%">
                                             <tbody>
                                             <tr>
                                                 <td style="font-weight:bold;">Auction total days:</td>
@@ -324,7 +324,7 @@ if (!empty($_POST['auction_price']) && !empty($_POST['auction_days'])) {
                             <tr>
                                 <td>
                                     <div class="TableContentContainer">
-                                        <table class="TableContent" style="border:1px solid #faf0d7;" width="100%">
+                                        <table class="TableContent" style="border:1px solid #291e10;" width="100%">
                                             <tbody>
                                             <tr>
                                                 <td>
@@ -349,7 +349,7 @@ if (!empty($_POST['auction_price']) && !empty($_POST['auction_days'])) {
                                         <tr>
                                             <td style="vertical-align:top;width:210px;;">
                                                 <div class="TableContentContainer">
-                                                    <table class="TableContent" style="border:1px solid #faf0d7;"
+                                                    <table class="TableContent" style="border:1px solid #291e10;"
                                                            width="100%">
                                                         <tbody>
                                                         <tr class="Even">
@@ -406,7 +406,7 @@ if (!empty($_POST['auction_price']) && !empty($_POST['auction_days'])) {
                                             </td>
                                             <td>
                                                 <div class="TableContentContainer">
-                                                    <table class="TableContent" style="border:1px solid #faf0d7;"
+                                                    <table class="TableContent" style="border:1px solid #291e10;"
                                                            width="100%">
                                                         <tbody>
                                                         <tr class="Even">
@@ -527,7 +527,7 @@ if (!empty($_POST['auction_price']) && !empty($_POST['auction_days'])) {
                             <tr>
                                 <td>
                                     <div class="TableContentContainer">
-                                        <table class="TableContent" style="border:1px solid #faf0d7;" width="100%">
+                                        <table class="TableContent" style="border:1px solid #291e10;" width="100%">
                                             <tbody>
                                             <tr class="Even">
                                                 <td><span class="LabelV">Creation Date:</span>

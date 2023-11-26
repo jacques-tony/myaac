@@ -38,7 +38,7 @@ if (empty($getpage_download)) {
                             <tr>
                                 <td>
                                     <div class="TableContentContainer">
-                                        <table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+                                        <table class="TableContent" width="100%" style="border:1px solid #291e10;">
                                             <tbody>
                                             <tr>
                                                 <td style="text-align: center; padding: 1.5rem;">
@@ -65,7 +65,7 @@ if (empty($getpage_download)) {
                             <tr>
                                 <td>
                                     <div class="TableContentContainer">
-                                        <table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+                                        <table class="TableContent" width="100%" style="border:1px solid #291e10;">
                                             <tbody>
                                             <tr>
                                                 <td class="LabelV">Disclaimer</td>

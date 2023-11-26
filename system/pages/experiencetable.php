@@ -9,7 +9,7 @@
     background-color: #1f1a12;
 }
 .AdditionalTableHeadline td {
-    border: 1px solid #faf0d7;
+    border: 1px solid #291e10;
 }
 </style>
 <?php
