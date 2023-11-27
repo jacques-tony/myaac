@@ -249,13 +249,13 @@ if (isset($config['boxes']))
 
         function MouseOverSubmenuItem(source) {
             if (source.style) {
-                source.style.backgroundColor = "#14433F";
+                source.style.backgroundColor = "#0000008a";
             }
         }
 
         function MouseOutSubmenuItem(source) {
             if (source.style) {
-                source.style.backgroundColor = "#0D2E2B";
+                source.style.backgroundColor = "#0000008a";
             }
         }
     </script>
@@ -334,10 +334,6 @@ if (isset($config['boxes']))
                 </div>
 
                 <div id="Loginbox">
-                    <div id="LoginTop"
-                         style="background-image:url(<?= $template_path; ?>/images/general/box-top.gif)"></div>
-                    <div id="BorderLeft" class="LoginBorder"
-                         style="background-image:url(<?= $template_path; ?>/images/general/chain.gif)"></div>
 
 
                     <div id="LoginButtonContainer"
@@ -359,8 +355,7 @@ if (isset($config['boxes']))
 
                     <div style="clear:both"></div>
 
-                    <div class="Loginstatus"
-                         style="background-image:url(<?= $template_path; ?>/images/loginbox/loginbox-textfield-background.gif)">
+                    <div class="Loginstatus">
                         <div id="LoginstatusText_2" onClick="LoginstatusTextAction(this);"
                              onMouseOver="MouseOverLoginBoxText(this);" onMouseOut="MouseOutLoginBoxText(this);">
                             <div id="LoginstatusText_2_1" class="LoginstatusText"
@@ -369,18 +364,9 @@ if (isset($config['boxes']))
                                  style="background-image:url(<?= $template_path; ?>/images/loginbox/loginbox-font-create-account-over.gif)"></div>
                         </div>
                     </div>
-
-                    <div id="BorderRight" class="LoginBorder"
-                         style="background-image:url(<?= $template_path; ?>/images/general/chain.gif)"></div>
-                    <div id="LoginBottom" class="Loginstatus"
-                         style="background-image:url(<?= $template_path; ?>/images/general/box-bottom.gif)"></div>
                 </div>
 
                 <div class="SmallMenuBox" id="DownloadBox">
-                    <div class="SmallBoxTop"
-                         style="background-image:url(<?= $template_path; ?>/images/global/general/box-top.gif)"></div>
-                    <div class="SmallBoxBorder"
-                         style="background-image:url(<?= $template_path; ?>/images/global/general/chain.gif);"></div>
                     <div class="SmallBoxButtonContainer"
                          style="background-image:url(<?= $template_path; ?>/images/global/loginbox/loginbox-textfield-background.gif)">
                         <a href="?subtopic=downloadclient&step=downloadagreement">
@@ -396,10 +382,6 @@ if (isset($config['boxes']))
                             </div>
                         </a>
                     </div>
-                    <div class="SmallBoxBorder BorderRight"
-                         style="background-image:url(<?= $template_path; ?>/images/global/general/chain.gif);"></div>
-                    <div class="Loginstatus SmallBoxBottom"
-                         style="background-image:url(<?= $template_path; ?>/images/global/general/box-bottom.gif);"></div>
                 </div>
 
                 <div-- id='Menu'>
@@ -563,7 +545,7 @@ if ($status['online']) {
                             </div>
                             <!-- COLLAPSE STATUS BAR -->
                             <?php if ($config['collapse_status'] == true) { ?>
-                                <div class="collapse" id="statusbar" style="background-color: #080300;">
+                                <div class="collapse show" id="statusbar" style="background-color: #080300;">
                                     <table class="Table3" cellpadding="0" cellspacing="0" style="width: 100%;">
                                         <tbody>
                                         <tr>

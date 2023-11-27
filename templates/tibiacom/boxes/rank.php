@@ -1,11 +1,11 @@
 <style>
     .rank{
-        width: 180px;
+        width: 208px;
         max-height: 360px;
     }
     .rank_header{
         height: 45px;
-        width: 180px;
+        width: 208px;
         background-image: url('templates/tibiacom/images/themeboxes/box_top.png');
         font-family: Verdana;
         font-weight: bold;
