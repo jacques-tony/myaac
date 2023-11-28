@@ -2,7 +2,11 @@
     .rank{
         width: 208px;
         max-height: 360px;
+        margin-bottom: 25px;
     }
+     .rank_title{
+        background-image: url('templates/tibiacom/images/themeboxes/title_rankreset.png');
+}
     .rank_header{
         height: 45px;
         width: 208px;
@@ -11,16 +15,29 @@
         font-weight: bold;
         color: #d5c3af;
         line-height: 65px;
+        position: relative; 
     }
+
+    .rank_header::before {
+        content: ""; /* Adiciona um conteúdo vazio para que a pseudo-classe seja renderizada */
+        display: block; /* Garante que o conteúdo seja exibido como bloco */
+        position: absolute; /* Posiciona a pseudo-classe em relação à classe pai */
+        top: 15; /* Ajusta a posição superior conforme necessário */
+        left: 25; /* Ajusta a posição à esquerda conforme necessário */
+        width: 156px; /* Garante que a pseudo-classe cubra a largura completa da classe pai */
+        height: 36px; /* Garante que a pseudo-classe cubra a altura completa da classe pai */
+        background-image: url('templates/tibiacom/images/themeboxes/title_rankreset.png');
+}
+
     .rank_bottom{
-        height: 30px;
-        width: 180px;
-        margin-top: -20px;
+        height: 35px;
+        width: 208px;
+        margin-top: -21px;
         background-image: url('templates/tibiacom/images/themeboxes/box_bottom.png');
     }
     .rank_content{
         padding: 0px 10px;
-        width: 160px;
+        width: 208px;
         max-height: 290px;
         background-image: url('templates/tibiacom/images/themeboxes/box_bg.png');
     }
@@ -48,8 +65,26 @@
     }
     .rank_text a{
         text-decoration: none;
-        color: #d5c3af;
-    }
+        color: #ff7100;
+        text-shadow: 0 0 1vw #F40A35;
+      }
+      .rank_text a {
+        animation: glow 1.5s ease infinite;
+        -moz-animation: glow 1.5s ease infinite;
+        -webkit-animation: glow 1.5s ease infinite;
+      }
+      @keyframes glow {
+        0%,
+        100% {
+          text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 3vw #FA1C16, 0 0 3vw #FA1C16, 0 0 .4vw #FED128, .1vw .1vw .1vw #806914;
+          color: #FED128;
+        }
+        50% {
+          text-shadow: 0 0 .1vw #800E0B, 0 0 1vw #800E0B, 0 0 1vw #800E0B, 0 0 1vw #800E0B, 0 0 .2vw #800E0B, .1vw .1vw .1vw #40340A;
+          color: #806914;
+        }
+      }
+
     .rank_button{
         height: 30px;
         width: 148px;
@@ -67,7 +102,7 @@
     }
 </style>
 <div class="rank">
-    <div class="rank_header">Highscores</div>
+    <div class="rank_header"></div>
     <div class="rank_content">
         <?php
         $topPlayers = getTopPlayers(5);
