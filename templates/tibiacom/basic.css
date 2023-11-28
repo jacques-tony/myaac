@@ -306,8 +306,8 @@ img {
   position: absolute;
   height: 64px;
   width: 64px;
-  top: -136px;
-  left: -15px;
+  top: -188px;
+  left: -84px;
   z-index: 15;
   cursor: pointer;
 }
@@ -316,18 +316,18 @@ img {
   position: absolute;
   height: 64px;
   width: 64px;
-  top: -136px;
-  left: 40px;
+  top: -188px;
+  left: -20px;
   z-index: 15;
   cursor: pointer;
 }
 
 #PedestalAndOnline {
   position: absolute;
-  left: -15px;
-  top: -121px;
-  width: 161px;
-  height: 85px;
+  left: -80px;
+  top: -184px;
+  width: 227px;
+  height: 163px;
 }
 #Pedestal {
     position: absolute;
@@ -335,6 +335,108 @@ img {
     top: -121px;
     width: 161px;
     height: 85px;
+}
+
+#monsterBosstimetextBosstime {
+  position: absolute;
+  left: -100px;
+  top: -145px;
+  width: 75px;
+  color: #ffffff;
+  font-family: Verdana,Tahoma;
+  font-size: 7.5pt;
+  font-weight: 700;
+  text-shadow: 0.1em 0.1em 0.08em #000, -0.1em -0.1em 0.08em #000, 0.1em -0.1em 0.08em #000, -0.1em 0.1em 0.08em #000, -0.1em 0 0.08em #000, 0.1em 0 0.08em #000;
+  text-decoration: none;
+  text-align: center;
+  line-height: normal;
+  background: #2a333d6e;
+  padding: 1px;
+  border: 1px solid #ffffff26;
+  border-radius: 11px 0px 0px 11px;
+}
+
+#monsterBosstimetextBosstimetimer {
+  position: absolute;
+  left: -113px;
+  top: -124px;
+  width: 102px;
+  height: 29px;
+  color: #ffffff;
+  font-family: Verdana,Tahoma;
+  font-size: 9px;
+  font-weight: 700;
+  text-shadow: 0.1em 0.1em 0.08em #000, -0.1em -0.1em 0.08em #000, 0.1em -0.1em 0.08em #000, -0.1em 0.1em 0.08em #000, -0.1em 0 0.08em #000, 0.1em 0 0.08em #000;
+  text-decoration: none;
+  text-align: center;
+  line-height: normal;
+  background: #1de86333;
+  padding: 1px;
+  border: 1px solid #ffffff26;
+  border-radius: 11px 0px 0px 11px;
+}
+
+#monsterboosttext {
+  text-align: center;
+  width: 180px;
+  top: -175px;
+  left: -46px;
+  position: absolute;
+  color: #cddc39;
+  font-family: Verdana,Tahoma;
+  font-size: 7pt;
+  font-weight: 700;
+  text-shadow: 0.1em 0.1em 0.08em #000, -0.1em -0.1em 0.08em #000, 0.1em -0.1em 0.08em #000, -0.1em 0.1em 0.08em #000, -0.1em 0 0.08em #000, 0.1em 0 0.08em #000;
+}
+
+#monsterboostloot {
+  position: absolute;
+  top: 15px;
+  left: -50px;
+  width: 180px;
+  color: #fff;
+  font-family: Verdana,Tahoma;
+  font-size: 7pt;
+  font-weight: 700;
+  text-shadow: 0.1em 0.1em 0.08em #000, -0.1em -0.1em 0.08em #000, 0.1em -0.1em 0.08em #000, -0.1em 0.1em 0.08em #000, -0.1em 0 0.08em #000, 0.1em 0 0.08em #000;
+}
+
+#monsterboostexp {
+  position: absolute;
+  top: 3px;
+  left: -50px;
+  width: 180px;
+  color: #00f000;
+  font-family: Verdana,Tahoma;
+  font-size: 7pt;
+  font-weight: 700;
+  text-shadow: 0.1em 0.1em 0.08em #000, -0.1em -0.1em 0.08em #000, 0.1em -0.1em 0.08em #000, -0.1em 0.1em 0.08em #000, -0.1em 0 0.08em #000, 0.1em 0 0.08em #000;
+}
+
+#creaturenameboost {
+  position: absolute;
+  top: -160px;
+  left: -30px;
+  width: 80px;
+  color: #00f000;
+  font-family: Verdana,Tahoma;
+  font-size: 7pt;
+  font-weight: 700;
+  text-shadow: 0.1em 0.1em 0.08em #000, -0.1em -0.1em 0.08em #000, 0.1em -0.1em 0.08em #000, -0.1em 0.1em 0.08em #000, -0.1em 0 0.08em #000, 0.1em 0 0.08em #000;
+  z-index: 99;
+}
+
+#bossnameboost {
+  position: absolute;
+  top: -160px;
+  left: -39px;
+  width: 225px;
+  color: #00f000;
+  font-family: Verdana,Tahoma;
+  font-size: 7pt;
+  font-weight: 700;
+  text-shadow: 0.1em 0.1em 0.08em #000, -0.1em -0.1em 0.08em #000, 0.1em -0.1em 0.08em #000, -0.1em 0.1em 0.08em #000, -0.1em 0 0.08em #000, 0.1em 0 0.08em #000;
+  z-index: 99;
 }
 
 #RightArtwork #PlayersOnline {

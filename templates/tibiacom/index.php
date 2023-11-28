@@ -690,6 +690,17 @@ if ($status['online']) {
             </div>
 
             <div id="ThemeboxesColumn">
+                <div id="monsterBosstimetextBosstime">Bonus</div>
+                <div id="monsterboosttext">Today's Boosted</div>
+
+            <div id="monsterBosstimetextBosstimetimer">
+                <div id="monsterboostloot" class="lineUp"><i class="fas fa-arrow-up" aria-hidden="true"></i> Loot +6%</div>
+                     <style>
+                    .lineUp{animation:2s anim-lineUp ease-out infinite}@keyframes anim-lineUp{0%{opacity:0;transform:translateY(80%)}20%{opacity:0}50%{opacity:1;transform:translateY(0)}100%{opacity:1;transform:translateY(0)}}.destakmenutext{color:#4dff20;text-shadow:2px 1px 4px #11c90e}.vocsupremtext{color:#fff700;text-shadow:2px 1px 4px #ff5e00}
+                    </style>
+            <div id="monsterboostexp" class="lineUp"><i class="fas fa-arrow-up" aria-hidden="true"></i> Exp +13%</div>
+            </div>
+
                 <?PHP
                 $creaturequery = $SQL->query("SELECT `boostname`, `looktype`, `lookfeet` , `looklegs` , `lookhead` , `lookbody` , `lookaddons` , `lookmount`   FROM `boosted_creature`")->fetch();
                 $creaturename = $creaturequery["boostname"];
@@ -714,6 +725,15 @@ if ($status['online']) {
                 $bossaddons = $bossquery["lookaddons"];
                 $bossmount = $bossquery["lookmount"];
                 ?>
+
+                <div id="creaturenameboost" class="creaturenameboost">
+                    <a> <?= ucwords(strtolower(trim($creaturename))); ?> </a>
+                </div>
+
+                <div id="bossnameboost" class="bossnameboost">
+                    <a> <?= ucwords(strtolower(trim($bossname))); ?> </a>
+                </div>
+                
                 <div id="RightArtwork">
                     <img id="Creature"
                          src="<?= $config['outfit_images_url'] ?>?id=<?= $creaturetype; ?>&addons=<?= $creatureaddons; ?>&head=<?= $creaturehead; ?>&body=<?= $creaturebody; ?>&legs=<?= $creaturelegs; ?>&feet=<?= $creaturefeet; ?>&mount=<?= $creaturemount; ?>"

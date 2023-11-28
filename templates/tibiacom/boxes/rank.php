@@ -95,11 +95,24 @@
         color: #d5c3af;
         font-size: 12px;
         cursor: pointer;
+        margin-bottom: 15px;
+        margin-left: -20;
+        margin-top: 15px;
     }
     .rank_button:hover{
         background: url('templates/tibiacom/images/themeboxes/button_over.png');
         color: #fff;
     }
+    .rank_button::before {
+        content: ""; /* Adiciona um conteúdo vazio para que a pseudo-classe seja renderizada */
+        display: block; /* Garante que o conteúdo seja exibido como bloco */
+        position: absolute; /* Posiciona a pseudo-classe em relação à classe pai */
+        top: 256px;
+        left: 30px;
+        width: 148px; /* Garante que a pseudo-classe cubra a largura completa da classe pai */
+        height: 30px; /* Garante que a pseudo-classe cubra a altura completa da classe pai */
+        background-image: url('templates/tibiacom/images/themeboxes/highscores.png');
+
 </style>
 <div class="rank">
     <div class="rank_header"></div>
@@ -123,7 +136,7 @@
         </div>
         <?php } ?>
         <a href="<?php echo BASE_URL ?>?highscores">
-            <button type="button" class="rank_button">Ver Highscores</button>
+            <button type="button" class="rank_button"></button>
         </a>
     </div>
     <div class="rank_bottom"></div>
