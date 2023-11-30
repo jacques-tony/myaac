@@ -27,12 +27,12 @@ if($diasemana[$diasemana_numero] == 'sabado'){
 ?>
 <style>
     .rashid{
-        width: 180px;
+        width: 208px;
         height: 145px;
     }
     .rashid_header{
         height: 45px;
-        width: 180px;
+        width: 208px;
         background-image: url('templates/tibiacom/images/themeboxes/box_top.png');
         font-family: Verdana;
         font-weight: bold;
@@ -40,14 +40,14 @@ if($diasemana[$diasemana_numero] == 'sabado'){
         line-height: 65px;
     }
     .rashid_bottom{
-        height: 30px;
-        width: 180px;
-        margin-top: -20px;
+        height: 35px;
+        width: 208px;
+        margin-top: -21px;
         background-image: url('templates/tibiacom/images/themeboxes/box_bottom.png');
     }
     .rashid_content{
         padding: 0px 10px;
-        width: 160px;
+        width: 208px;
         height: 80px;
         background-image: url('templates/tibiacom/images/themeboxes/box_bg.png');
         display: flex;

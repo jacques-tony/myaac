@@ -266,8 +266,8 @@ if (isset($config['boxes']))
          background-position: center;
          background-repeat: no-repeat;
          background-attachment: fixed;
-         width: 100%;
-            height: 100%;
+		 width: 100%;
+			height: 100%;
          ">
 <?= template_place_holder('body_start'); ?>
 <?php if (!empty($config['network_facebook'])) { ?>
@@ -346,7 +346,7 @@ if (isset($config['boxes']))
                                      style="background-image:url(<?= $template_path; ?>/images/global/buttons/mediumbutton-over.gif)"></div>
                                 <?php
                                 echo '<div id="ButtonText" ' . ($logged ? '' : 'style="background-image:url(' . $template_path . '/images/global/buttons/mediumbutton_login.png)"') . '>
-             </div>';
+			 </div>';
                                 ?>
                             </div>
                         </div>
@@ -397,27 +397,27 @@ if (isset($config['boxes']))
                         }
                         ?>
                         <div id='<?= $cat['id']; ?>' class='menuitem'>
-    <span onClick="MenuItemAction('<?= $cat['id']; ?>')">
-        <div class='MenuButton' style='background-image:url(<?= $template_path ?>/images/menu/button-background.gif);'>
-            <div onMouseOver='MouseOverMenuItem(this);' onMouseOut='MouseOutMenuItem(this);'><div class='Button'
+	<span onClick="MenuItemAction('<?= $cat['id']; ?>')">
+		<div class='MenuButton' style='background-image:url(<?= $template_path ?>/images/menu/button-background.gif);'>
+			<div onMouseOver='MouseOverMenuItem(this);' onMouseOut='MouseOutMenuItem(this);'><div class='Button'
                                                                                                   style='background-image:url(<?= $template_path; ?>/images/menu/button-background-over.gif);'></div>
-                <span id='<?= $cat['id']; ?>_Lights' class='Lights'>
-                    <div class='light_lu'
+				<span id='<?= $cat['id']; ?>_Lights' class='Lights'>
+					<div class='light_lu'
                          style='background-image:url(<?= $template_path; ?>/images/menu/green-light.gif);'></div>
-                    <div class='light_ld'
+					<div class='light_ld'
                          style='background-image:url(<?= $template_path; ?>/images/menu/green-light.gif);'></div>
-                    <div class='light_ru'
+					<div class='light_ru'
                          style='background-image:url(<?= $template_path; ?>/images/menu/green-light.gif);'></div>
-                </span>
-                <div id='<?= $cat['id']; ?>_Icon' class='Icon'
+				</span>
+				<div id='<?= $cat['id']; ?>_Icon' class='Icon'
                      style='background-image:url(<?= $template_path ?><?= getImageMenuRandom($cat['id']) ?>);'></div>
-                <div id='<?= $cat['id']; ?>_Label' class='Label'
+				<div id='<?= $cat['id']; ?>_Label' class='Label'
                      style='background-image:url(<?= $template_path; ?>/images/menu/label-<?= $cat['id']; ?>.gif);'></div>
-                <div id='<?= $cat['id']; ?>_Extend' class='Extend'
+				<div id='<?= $cat['id']; ?>_Extend' class='Extend'
                      style='background-image:url(<?= $template_path; ?>/images/general/plus.gif);'></div>
-            </div>
-        </div>
-    </span>
+			</div>
+		</div>
+	</span>
                             <div id='<?= $cat['id']; ?>_Submenu' class='Submenu'>
                                 <?php
                                 $default_menu_color = "ffffff";
@@ -453,9 +453,115 @@ if (isset($config['boxes']))
                             }
                             ?>
                         </div>
+
                         <?php
+
                     }
                     ?>
+
+                    <style>
+    .wiki{
+        width: 208px;
+        height: 190px;
+        margin-top: 25px;
+        margin-left: -19px;
+    }
+    .wiki_header{
+        height: 45px;
+        width: 208px;
+        background-image: url('templates/tibiacom/images/themeboxes/box_top.png');
+        font-family: Verdana;
+        font-weight: bold;
+        color: #d5c3af;
+        line-height: 65px;
+    }
+    .wiki_header::before {
+        content: ""; /* Adiciona um conteúdo vazio para que a pseudo-classe seja renderizada */
+        display: block; /* Garante que o conteúdo seja exibido como bloco */
+        position: absolute; /* Posiciona a pseudo-classe em relação à classe pai */
+        top: 14; /* Ajusta a posição superior conforme necessário */
+        left: 10; /* Ajusta a posição à esquerda conforme necessário */
+        width: 185px; /* Garante que a pseudo-classe cubra a largura completa da classe pai */
+        height: 34px; /* Garante que a pseudo-classe cubra a altura completa da classe pai */
+        background-image: url('templates/tibiacom/images/themeboxes/title_wiki.png');
+        position:relative;
+
+    }
+    .wiki_bottom{
+        height: 35px;
+        width: 208px;
+        margin-top: -21px;
+        background-image: url('templates/tibiacom/images/themeboxes/box_bottom.png');
+    }
+    .wiki_content{
+        padding: 0px 10px;
+        width: 208px;
+        height: 155px;
+        background-image: url('templates/tibiacom/images/themeboxes/box_bg.png');
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        
+    }
+
+    .wiki_content::before{
+        content: ""; /* Adiciona um conteúdo vazio para que a pseudo-classe seja renderizada */
+        display: block; /* Garante que o conteúdo seja exibido como bloco */
+        position: absolute; /* Posiciona a pseudo-classe em relação à classe pai */
+        top: 6PX; /* Ajusta a posição superior conforme necessário */
+        left: -9; /* Ajusta a posição à esquerda conforme necessário */
+        width: 154px; /* Garante que a pseudo-classe cubra a largura completa da classe pai */
+        height: 89px; /* Garante que a pseudo-classe cubra a altura completa da classe pai */
+        background-image: url('templates/tibiacom/images/themeboxes/img_wiki.png');
+        position:relative;
+    }
+
+    .wiki_outfit{
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        background-position: bottom right;
+        left: 10px;
+        margin-top: -15px;
+    }
+    .wiki_text{
+        margin-left: 45px;
+        font-family: Verdana;
+        color: #d5c3af;
+        text-align: left;
+    }
+    .wiki_button{
+        height: 30px;
+        width: 148px;
+        border: 0;
+        background: url('templates/tibiacom/images/themeboxes/button.png');
+        font-family: Verdana;
+        font-weight: 100;
+        color: #d5c3af;
+        font-size: 12px;
+        cursor: pointer;
+        margin-bottom: 15px;
+        margin-left: -7;
+        margin-top: 22px;
+    }
+    .wiki_button:hover{
+        background: url('templates/tibiacom/images/themeboxes/button_over.png');
+        color: #fff;
+    }
+</style>
+<div class="wiki">
+    <div class="wiki_header"></div>
+    <div class="wiki_content">
+        <a href="https://phoenixwiki.gitbook.io/phoenix-wiki/" target="_blank">
+    <button type="button" class="wiki_button">Acessar wiki</button>
+</a>       
+    </div>
+    <div class="wiki_bottom"></div>
+</div>
+
+
+
                     <script type="text/javascript">
                         InitializePage();
                     </script>
@@ -482,48 +588,48 @@ if (isset($config['boxes']))
                                         <img class="InfoBarBigLogo"
                                              src="<?= $template_path; ?>/images/global/header/icon-discord.png">
                                         <span class="InfoBarNumbers">
-                    <a class="InfoBarLinks" href="<?= $config['discord_link']; ?>" target="new"><span
+					<a class="InfoBarLinks" href="<?= $config['discord_link']; ?>" target="new"><span
                             class="InfoBarSmallElement">Join Discord</span></a>
-                </span>
+				</span>
                                     <?php } ?>
                                     <?php if (isset($config['whatsapp_link']) && !empty($config['whatsapp_link'])) { ?>
                                         <img class="InfoBarBigLogo"
                                              src="<?= $template_path; ?>/images/global/header/icon-whatsapp.png"
                                              width="16">
                                         <span class="InfoBarNumbers">
-                    <a class="InfoBarLinks" href="https://wa.me/<?= $config['whatsapp_link']; ?>" target="new"><span
+					<a class="InfoBarLinks" href="https://wa.me/<?= $config['whatsapp_link']; ?>" target="new"><span
                             class="InfoBarSmallElement">Whatsapp</span></a>
-                </span>
+				</span>
                                     <?php } ?>
                                     <?php if (isset($config['instagram_link']) && !empty($config['instagram_link'])) { ?>
                                         <img class="InfoBarBigLogo"
                                              src="<?= $template_path; ?>/images/global/header/icon-instagram.png"
                                              width="16">
                                         <span class="InfoBarNumbers">
-                    <a class="InfoBarLinks" href="https://www.instagram.com/<?= $config['instagram_link']; ?>"
+					<a class="InfoBarLinks" href="https://www.instagram.com/<?= $config['instagram_link']; ?>"
                        target="new"><span class="InfoBarSmallElement">Instagram</span></a>
-                </span>
+				</span>
                                     <?php } ?>
                                     <?php if (isset($config['facebook_link']) && !empty($config['facebook_link'])) { ?>
                                         <img class="InfoBarBigLogo"
                                              src="<?= $template_path; ?>/images/global/header/icon-facebook.png"
                                              width="16">
                                         <span class="InfoBarNumbers">
-                    <a class="InfoBarLinks" href="https://www.facebook.com/<?= $config['facebook_link']; ?>"
+					<a class="InfoBarLinks" href="https://www.facebook.com/<?= $config['facebook_link']; ?>"
                        target="new"><span class="InfoBarSmallElement">Facebook</span></a>
-                </span>
+				</span>
                                     <?php } ?>
                                     <img class="InfoBarBigLogo"
                                          src="<?= $template_path; ?>/images/global/header/icon-download.png">
                                     <span class="InfoBarNumbers">
-                    <a class="InfoBarLinks" href="?subtopic=downloadclient"><span
+					<a class="InfoBarLinks" href="?subtopic=downloadclient"><span
                             class="InfoBarSmallElement">Download</span></a>
-                </span>
+				</span>
                                     <span style="float: right; margin-top: -2px;">
-                <img class="InfoBarBigLogo" src="<?= $template_path; ?>/images/global/header/icon-players-online.png">
-                <span class="InfoBarNumbers">
-                    <span class="InfoBarSmallElement">
-                        <a class="InfoBarLinks" href="?online">
+				<img class="InfoBarBigLogo" src="<?= $template_path; ?>/images/global/header/icon-players-online.png">
+				<span class="InfoBarNumbers">
+					<span class="InfoBarSmallElement">
+						<a class="InfoBarLinks" href="?online">
 <?php
 if ($status['online']) {
     echo '' . $status['players'] . ' Players Online';
@@ -531,9 +637,9 @@ if ($status['online']) {
     echo 'Server Offline';
 }
 ?>
-                        </a>
-                    </span>
-                </span>
+						</a>
+					</span>
+				</span>
 <?php if ($config['collapse_status'] == true) { ?>
     <a data-bs-toggle="collapse" href="#statusbar" role="button" aria-expanded="false" aria-controls="statusbar">
 <img src="<?= $template_path; ?>/images/global/content/top-to-back.gif" class="InfoBarBigLogo">
@@ -716,7 +822,7 @@ if ($status['online']) {
                 <?PHP
                 $bossquery = $SQL->query("SELECT `boostname`, `looktypeEx`, `looktype`, `lookfeet` , `looklegs` , `lookhead` , `lookbody` , `lookaddons` , `lookmount`   FROM `boosted_boss`")->fetch();
                 $bossname = $bossquery["boostname"];
-                $bosstypeEx = $bossquery["looktypeEx"];
+				$bosstypeEx = $bossquery["looktypeEx"];
                 $bosstype = $bossquery["looktype"];
                 $bossfeet = $bossquery["lookfeet"];
                 $bosslegs = $bossquery["looklegs"];
@@ -734,26 +840,26 @@ if ($status['online']) {
                     <a> <?= ucwords(strtolower(trim($bossname))); ?> </a>
                 </div>
                 
-                <div id="RightArtwork">
-                    <img id="Creature"
-                         src="<?= $config['outfit_images_url'] ?>?id=<?= $creaturetype; ?>&addons=<?= $creatureaddons; ?>&head=<?= $creaturehead; ?>&body=<?= $creaturebody; ?>&legs=<?= $creaturelegs; ?>&feet=<?= $creaturefeet; ?>&mount=<?= $creaturemount; ?>"
-                         alt="Creature of the Day"
-                         title="Today's boosted creature: <?= ucwords(strtolower(trim($creaturename))); ?>">
+				<div id="RightArtwork">
+					<img id="Creature"
+						 src="<?= $config['outfit_images_url'] ?>?id=<?= $creaturetype; ?>&addons=<?= $creatureaddons; ?>&head=<?= $creaturehead; ?>&body=<?= $creaturebody; ?>&legs=<?= $creaturelegs; ?>&feet=<?= $creaturefeet; ?>&mount=<?= $creaturemount; ?>"
+						 alt="Creature of the Day"
+						 title="Today's boosted creature: <?= ucwords(strtolower(trim($creaturename))); ?>">
 
-                    <?php if ($bosstypeEx != 0): ?>
-                        <img id="Boss" src="<?= $config['item_images_url'] ?><?= $bosstypeEx; ?>.gif"
-                             alt="Boss of the Day"
-                             title="Today's boosted boss: <?= ucwords(strtolower(trim($bossname))); ?>">
-                    <?php else: ?>
-                        <img id="Boss"
-                             src="<?= $config['outfit_images_url'] ?>?id=<?= $bosstype; ?>&addons=<?= $bossaddons; ?>&head=<?= $bosshead; ?>&body=<?= $bossbody; ?>&legs=<?= $bosslegs; ?>&feet=<?= $bossfeet; ?>&mount=<?= $bossmount; ?>"
-                             alt="Boss of the Day"
-                             title="Today's boosted boss: <?= ucwords(strtolower(trim($bossname))); ?>">
-                    <?php endif; ?>
+					<?php if ($bosstypeEx != 0): ?>
+						<img id="Boss" src="<?= $config['item_images_url'] ?><?= $bosstypeEx; ?>.gif"
+							 alt="Boss of the Day"
+							 title="Today's boosted boss: <?= ucwords(strtolower(trim($bossname))); ?>">
+					<?php else: ?>
+						<img id="Boss"
+							 src="<?= $config['outfit_images_url'] ?>?id=<?= $bosstype; ?>&addons=<?= $bossaddons; ?>&head=<?= $bosshead; ?>&body=<?= $bossbody; ?>&legs=<?= $bosslegs; ?>&feet=<?= $bossfeet; ?>&mount=<?= $bossmount; ?>"
+							 alt="Boss of the Day"
+							 title="Today's boosted boss: <?= ucwords(strtolower(trim($bossname))); ?>">
+					<?php endif; ?>
 
-                    <img id="PedestalAndOnline" src="<?= $template_path; ?>/images/header/pedestal.gif"
-                         alt="Monster Pedestal and Players Online Box"/>
-                </div>
+					<img id="PedestalAndOnline" src="<?= $template_path; ?>/images/header/pedestal.gif"
+						 alt="Monster Pedestal and Players Online Box"/>
+				</div>
 
                 <div id="Themeboxes">
                     <?php

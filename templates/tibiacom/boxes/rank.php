@@ -76,11 +76,11 @@
       @keyframes glow {
         0%,
         100% {
-          text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 3vw #FA1C16, 0 0 3vw #FA1C16, 0 0 .4vw #FED128, .1vw .1vw .1vw #806914;
+          text-shadow: 0 0 1vw #FA1C16, 0 0 1vw #FA1C16, 0 0 1vw #FA1C16, 0 0 1vw #FA1C16, 0 0 .1vw #FED128, .1vw .1vw .1vw #806914;
           color: #FED128;
         }
         50% {
-          text-shadow: 0 0 .1vw #800E0B, 0 0 1vw #800E0B, 0 0 1vw #800E0B, 0 0 1vw #800E0B, 0 0 .2vw #800E0B, .1vw .1vw .1vw #40340A;
+          text-shadow: 0 0 .1vw #800E0B, 0 0 1vw #800E0B, 0 0 1vw #800E0B, 0 0 1vw #800E0B, 0 0 .1vw #800E0B, .1vw .1vw .1vw #40340A;
           color: #806914;
         }
       }
@@ -107,7 +107,7 @@
         content: ""; /* Adiciona um conteúdo vazio para que a pseudo-classe seja renderizada */
         display: block; /* Garante que o conteúdo seja exibido como bloco */
         position: absolute; /* Posiciona a pseudo-classe em relação à classe pai */
-        top: 256px;
+        top: 306px;
         left: 30px;
         width: 148px; /* Garante que a pseudo-classe cubra a largura completa da classe pai */
         height: 30px; /* Garante que a pseudo-classe cubra a altura completa da classe pai */
@@ -117,8 +117,11 @@
     .rank_status {
         position: absolute;
         background-position: bottom right;
-        right: 12px;
-        margin-top: 4px;
+        right: 151px;
+        margin-top: 15px;
+        background-color: #ffc6893d;
+        border: 2px solid #824c24;
+        border-radius: 5px;
     }
 
 </style>
@@ -139,21 +142,20 @@
 
         $topPlayers = $SQL->query('SELECT players.name, players.level, player_storage.value FROM players JOIN player_storage ON players.id = player_storage.player_id WHERE player_storage.key = 500 AND players.group_id < 3 ORDER BY CAST(player_storage.value AS DECIMAL) DESC LIMIT 5');
         foreach($topPlayers as $info){
-            $outfit_url = '';
-            if ($config['online_outfit']){
-                $outfit_url = $config['outfit_images_url'] . '?id=' . $info['looktype'] . ( !empty( $info['lookaddons'] ) ? '&addons=' . $info['lookaddons'] : '' ) . '&head=' . $info['lookhead'] . '&body=' . $info['lookbody'] . '&legs=' . $info['looklegs'] . '&feet=' . $info['lookfeet'];
-                $info['outfit'] = $outfit_url;
-            }
-            $player_voc = $config['vocations'][$info['vocation']];
+    $player = new OTS_Player();
+    $player->find($info['name']);
 
-            $player = new OTS_Player();
-            $player->find($info['name']);
-        ?>
-        <div class="rank_player">
+    $outfit_url = '';
+    if ($config['online_outfit']){
+        $outfit_url = $config['outfit_images_url'] . '?id=' . $player->getLookType() . ( !empty( $player->getLookAddons() ) ? '&addons=' . $player->getLookAddons() : '' ) . '&head=' . $player->getLookHead() . '&body=' . $player->getLookBody() . '&legs=' . $player->getLookLegs() . '&feet=' . $player->getLookFeet();
+        $info['outfit'] = $outfit_url;
+    }
+?>
+<div class="rank_player">
             <div class="rank_outfit" style="background-image: url('<?php echo $info['outfit'] ?>')"></div>
             <div class="rank_text">
                 <a href="<?php echo getPlayerLink($info['name'], false) ?>"><b><?php echo $info['name'] ?></b></a> <img class="rank_status"src="templates/tibiacom/images/<?php echo ($player->isOnline() ? 'on' : 'off') ?>.gif"><br>
-                <small>R: <?php echo $info['value'] ?> / <?php echo $vocations[$player->getVocationName()] ?></small>
+                <small>Resets: <?php echo $info['value'] ?> / <?php echo $vocations[$player->getVocationName()] ?></small>
             </div>
         </div>
         <?php } ?>

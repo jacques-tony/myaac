@@ -17,7 +17,7 @@
         content: ""; /* Adiciona um conteúdo vazio para que a pseudo-classe seja renderizada */
         display: block; /* Garante que o conteúdo seja exibido como bloco */
         position: absolute; /* Posiciona a pseudo-classe em relação à classe pai */
-        top: 352; /* Ajusta a posição superior conforme necessário */
+        top: 385; /* Ajusta a posição superior conforme necessário */
         left: 25; /* Ajusta a posição à esquerda conforme necessário */
         width: 156px; /* Garante que a pseudo-classe cubra a largura completa da classe pai */
         height: 36px; /* Garante que a pseudo-classe cubra a altura completa da classe pai */
@@ -60,7 +60,7 @@
         content: ""; /* Adiciona um conteúdo vazio para que a pseudo-classe seja renderizada */
         display: block; /* Garante que o conteúdo seja exibido como bloco */
         position: absolute; /* Posiciona a pseudo-classe em relação à classe pai */
-        top: 390px;
+        top: 423px;
         left: 30px;
         width: 148px; /* Garante que a pseudo-classe cubra a largura completa da classe pai */
         height: 30px; /* Garante que a pseudo-classe cubra a altura completa da classe pai */
