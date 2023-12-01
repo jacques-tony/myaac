@@ -3,8 +3,6 @@
         width: 208px;
         max-height: 360px;
         margin-bottom: 25px;
-        margin-bottom: 100px;
-        margin-top: 64px;
     }
 
     .castle_header {
@@ -33,7 +31,7 @@
 
     .castle_text {
         position: absolute;
-        top: 778px;
+        top: 765px;
         left: 16px;
         height: 40px;
         width: 176px;

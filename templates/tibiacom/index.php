@@ -17,26 +17,6 @@ if (isset($config['boxes']))
     user-select: none;
   }
     </style>
-    <script>
-function mensagem(text) {
-      alert('Conteúdo protegido pela nossa politica de privacidade.');
-      return false;
-    }
-
-    function bloquearCopia(Event) {
-      var Event = Event ? Event : window.event;
-      var tecla = (Event.keyCode) ? Event.keyCode : Event.which;
-      if (sessionStorage.getItem("ultimaTecla") === "17" && tecla === 85) {
-        Event.preventDefault();
-        window.location = "https://endereco-do-seu-site.com.br/conteudo-protegido.php";
-      }
-      sessionStorage.setItem("ultimaTecla", tecla);
-    }
-
-$(document).keypress(bloquearCopia);
-$(document).keydown(bloquearCopia);
-$(document).contextmenu(mensagem);
-</script>
 
     <?= template_place_holder('head_start'); ?>
     <link rel="shortcut icon" href="<?= $template_path; ?>/images/favicon.ico" type="image/x-icon"/>

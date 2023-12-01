@@ -1,7 +1,7 @@
 <style>
     .donate{
         width: 208px;
-        height: 190px;
+        height: 215px;
         margin-bottom: 25px;
     }
     .donate_header{
@@ -35,7 +35,7 @@
         width: 208px;
         height: 155px;
         background-image: url('templates/tibiacom/images/themeboxes/box_bg.png');
-        display: grid;
+        display: flex;
         justify-content: center;
         align-items: center;
     }
