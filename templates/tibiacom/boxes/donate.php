@@ -2,6 +2,7 @@
     .donate{
         width: 208px;
         height: 190px;
+        margin-bottom: 25px;
     }
     .donate_header{
         height: 45px;
