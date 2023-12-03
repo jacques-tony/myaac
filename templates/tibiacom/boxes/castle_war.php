@@ -30,8 +30,8 @@
     }
 
     .castle_text {
-        position: absolute;
-        top: 765px;
+        position: relative;
+        top: 15px;
         left: 16px;
         height: 40px;
         width: 176px;

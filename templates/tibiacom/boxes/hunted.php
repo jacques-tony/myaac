@@ -39,8 +39,8 @@
     }
 
     .hunted_text {
-        position: absolute;
-        top: 1010px;
+        position: relative;
+        top: 15px;
         left: 47px;
         height: 40px;
         width: 176px;

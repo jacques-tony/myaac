@@ -17,8 +17,8 @@
     .donate_header::before {
         content: ""; /* Adiciona um conteúdo vazio para que a pseudo-classe seja renderizada */
         display: block; /* Garante que o conteúdo seja exibido como bloco */
-        position: absolute; /* Posiciona a pseudo-classe em relação à classe pai */
-        top: 525; /* Ajusta a posição superior conforme necessário */
+        position: relative; /* Posiciona a pseudo-classe em relação à classe pai */
+        top: 15; /* Ajusta a posição superior conforme necessário */
         left: 48; /* Ajusta a posição à esquerda conforme necessário */
         width: 114px; /* Garante que a pseudo-classe cubra a largura completa da classe pai */
         height: 34px; /* Garante que a pseudo-classe cubra a altura completa da classe pai */
