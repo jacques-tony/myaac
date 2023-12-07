@@ -30,7 +30,7 @@ $config = array(
 	 * WARNING2: on 'dev' all PHP errors/warnings are displayed
 	 * Recommended: 'prod' cause of speed (page load time is better)
 	 */
-	'env' => 'dev', // 'prod' for production and 'dev' for development
+	'env' => 'prod', // 'prod' for production and 'dev' for development
 
 	'template' => 'tibiacom', // template used by website (kathrine, tibiacom)
 	'template_allow_change' => false, // allow users to choose their own template while browsing website?
@@ -61,9 +61,9 @@ $config = array(
 	'language' => 'en', // default language (currently only 'en' available)
 	'language_allow_change' => false,
 
-	'visitors_counter' => true,
+	'visitors_counter' => false,
 	'visitors_counter_ttl' => 10, // how long visitor will be marked as online (in minutes)
-	'views_counter' => true,
+	'views_counter' => false,
 
 	// cache system. by default file cache is used
 	'cache_engine' => 'auto', // apc, apcu, eaccelerator, xcache, file, auto, or blank to disable.
@@ -93,8 +93,8 @@ $config = array(
 	// account
 	'account_management' => true, // disable if you're using other method to manage users (fe. tfs account manager)
 	'account_login_by_email' => true, // use email instead of Account Name like in latest Tibia
-	'account_login_by_email_fallback' => false, // allow also additionally login by Account Name/Number (for users that might forget their email)
-	'account_create_auto_login' => false, // auto login after creating account?
+	'account_login_by_email_fallback' => true, // allow also additionally login by Account Name/Number (for users that might forget their email)
+	'account_create_auto_login' => true, // auto login after creating account?
 	'account_create_character_create' => true, // allow directly to create character on create account page?
 	'account_mail_verify' => false, // force users to confirm their email addresses when registering account
     'account_mail_confirmed_reward' => [ // reward users for confirming their E-Mails
@@ -105,12 +105,12 @@ $config = array(
         'message' => 'You received %d %s for confirming your E-Mail address.' // example: You received 20 coins for confirming your E-Mail address.
     ],
 	'account_mail_unique' => true, // email addresses cannot be duplicated? (one account = one email)
-	'account_premium_days' => 0, // default premium days on new account
+	'account_premium_days' => 5, // default premium days on new account
 	'account_premium_coins' => 0, // default coins on new account
 	'account_welcome_mail' => false, // send welcome email when user registers
     'account_welcome_mail_show_pass' => false, // send password in welcome email
 	'account_mail_change' => 2, // how many days user need to change email to account - block hackers
-	'account_country' => true, // user will be able to set country of origin when registering account, this information will be viewable in others places aswell
+	'account_country' => false, // user will be able to set country of origin when registering account, this information will be viewable in others places aswell
 	'account_country_recognize' => true, // should country of user be automatically recognized by his IP? This makes an external API call to http://ipinfo.io
 
     'account_change_coin_type' => 'coins', // which coin you want to use, coins or coins_transferable to buy changes at site
@@ -146,10 +146,10 @@ $config = array(
 	'smtp_debug' => false, // set true to debug (you will see more info in error.log)
 
 	// reCAPTCHA (prevent spam bots)
-	'recaptcha_enabled' => false, // enable recaptcha verification code
-	'recaptcha_site_key' => '', // get your own site and secret keys at https://www.google.com/recaptcha
-	'recaptcha_secret_key' => '',
-	'recaptcha_theme' => 'light', // light, dark
+	'recaptcha_enabled' => true, // enable recaptcha verification code
+	'recaptcha_site_key' => '6LewRCopAAAAAJYKWUzxoA0YZDeBf-0_ymXHuXZa', // get your own site and secret keys at https://www.google.com/recaptcha
+	'recaptcha_secret_key' => '6LewRCopAAAAAOG0AfAaqDQ9uk_9t-0_giJOPAtO',
+	'recaptcha_theme' => 'dark', // light, dark
 
 	// e-mail senders
 	'send_mail_when_change_password' => true,	// send e-mail with new password when change password to account
@@ -190,7 +190,7 @@ $config = array(
 
 	// town list used when creating character
 	// won't be displayed if there is only one item (rookgaard for example)
-	'character_towns' => array(1),
+	'character_towns' => array(2),
 
 	// characters length
 	// This is the minimum and the maximum length that a player can create a character. It is highly recommend the maximum length to be 21.
@@ -201,20 +201,8 @@ $config = array(
 	// if you use TFS 1.3 with support for 'towns' table in database, then you can ignore this - it will be configured automatically (generated from your .OTBM map)
 	'towns' => array(
 		0 => 'No Town',
-		1 => 'Tutorial City',
-		5 => 'AbDendriel',
-		6 => 'Carlin',
-		8 => 'Thais',
-		9 => 'Venore',
-		10 => 'Ankrahmun',
-		11 => 'Edron',
-		12 => 'Farmine',
-		13 => 'Darashia',
-		14 => 'Liberty Bay',
-		15 => 'Port Hope',
-		16 => 'Svargrond',
-		17 => 'Yalahar',
-		20 => 'Rathleton'
+		1 => 'Phoenix City',
+		2 => 'Newbie Phoenix',
 	),
 
 	// guilds
@@ -228,8 +216,8 @@ $config = array(
 
 	// online page
 	'online_record' => true, // display players record?
-	'online_vocations' => false, // display vocation statistics?
-	'online_vocations_images' => false, // display vocation images?
+	'online_vocations' => true, // display vocation statistics?
+	'online_vocations_images' => true, // display vocation images?
 	'online_skulls' => true, // display skull images
 	'online_outfit' => true,
 	'online_afk' => false,
@@ -306,10 +294,7 @@ $config = array(
 	// status bar
 	'status_bar' => true,
 	'client_link' => 'https://codeload.github.com/dudantas/tibia-client/zip/refs/tags/13.20.13560', // link to download tibia client
-	'discord_link' => 'https://discord.com/invite/gvTj5sh9Mp', // link to join discord channel
-	'whatsapp_link' => '5511912345678', // wa.me/5511912345678
 	'instagram_link' => 'profile', // www.instagram.com/profile
-	'facebook_link' => 'page', // www.facebook.com/page
 	'collapse_status' => true,
 
 	// events
@@ -326,7 +311,7 @@ $config = array(
 	// load page
 	'pace_load' => true, // load page top bar
 	'pace_theme' => 'flat-top', // big-counter, bounce, center-atom, center-circle, center-radar, center-simple, corner-indicator, fill-left, flash, flat-top, loading-bar, max-osx, material, minimal
-	'pace_color' => 'white', // black, blue, green, orange, pink, purple, red, silver, white, yellow
+	'pace_color' => 'orange', // black, blue, green, orange, pink, purple, red, silver, white, yellow
 
 	// char bazaar
 	'bazaar_create' => 50, // price to create auction
