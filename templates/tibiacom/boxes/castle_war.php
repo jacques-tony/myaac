@@ -102,7 +102,13 @@
         }
 
         if (!$is_dominant) {
-            echo '<div class="castle_not">There is currently no dominant guild!</div>';
+        ?>
+            <div>
+                <div class="castle_guildflag"></div>
+            </div>
+            <div class="castle_guildname">No dominant</div>
+            <div class="castle_leader">LEADER: -</div>
+        <?php
         }
         ?>
     </div>

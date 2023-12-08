@@ -65,6 +65,7 @@
         text-transform: uppercase;
         font-weight: 700;
         cursor: pointer;
+        color:#ff7100;
     }
 
     .hunted_name a {
@@ -120,7 +121,7 @@
     </div>
     <div class="hunted_content">
         <?php
-        $hunteds = $SQL->query('SELECT * FROM `procurado` WHERE `killed` = 0 ORDER BY RAND() DESC LIMIT 1;');
+        $hunteds = $SQL->query('SELECT * FROM `PROCURADO` WHERE `killed` = 0 ORDER BY RAND() DESC LIMIT 1;');
 															
         $is_hunted = false;
         foreach ($hunteds as $hunted) {
@@ -152,7 +153,15 @@
         }
 
         if (!$is_hunted) {
-            echo '<div class="hunted_not">There is currently no hunted!</div>';
+        ?>
+            <div>
+                <div class="base_hunted"></div>
+                <div class="hunted_name">NONE WANTED</div>
+                <div class="hunted_by"><span style="color: white;">BY: </span>-</div>
+                <div class="hunted_reward"><span style="color: white;">REWARD: </span>-</div>
+                <div class="hunted_all"><a href="?hunted">Ver todos</a></div>
+            </div>
+        <?php
         }
         ?>
     </div>
