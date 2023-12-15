@@ -21,6 +21,10 @@ if (isset($config['boxes']))
   }
     </style>
 
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+
     <?= template_place_holder('head_start'); ?>
     <link rel="shortcut icon" href="<?= $template_path; ?>/images/favicon.ico" type="image/x-icon"/>
     <link rel="icon" href="<?= $template_path; ?>/images/favicon.ico" type="image/x-icon"/>
