@@ -31,21 +31,17 @@
         background-image: url('templates/tibiacom/images/themeboxes/box_bottom.png');
     }
     .donate_content{
-        padding: 0px 10px;
         width: 208px;
         height: 155px;
         background-image: url('templates/tibiacom/images/themeboxes/box_bg.png');
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .donate_content::before {
         content: ""; /* Adiciona um conteúdo vazio para que a pseudo-classe seja renderizada */
         display: block; /* Garante que o conteúdo seja exibido como bloco */
-        position: absolute; /* Posiciona a pseudo-classe em relação à classe pai */
-        top: 560; /* Ajusta a posição superior conforme necessário */
-        left: 30; /* Ajusta a posição à esquerda conforme necessário */
+        position: relative; /* Posiciona a pseudo-classe em relação à classe pai */
+        top: 10px; /* Ajusta a posição superior conforme necessário */
+        left: 29px; /* Ajusta a posição à esquerda conforme necessário */
         width: 152px; /* Garante que a pseudo-classe cubra a largura completa da classe pai */
         height: 87px; /* Garante que a pseudo-classe cubra a altura completa da classe pai */
         background-image: url('templates/tibiacom/images/themeboxes/donate/donate.png');
@@ -75,8 +71,8 @@
         color: #d5c3af;
         font-size: 12px;
         cursor: pointer;
-        margin-top: 105px;
-        margin-left: -15px;
+        margin-top: 25px;
+        margin-left: 0px;
     }
     .donate_button:hover{
         background: url('templates/tibiacom/images/themeboxes/button_over.png');
