@@ -647,7 +647,7 @@ if (isset($config['boxes']))
                             </div>
                             <!-- COLLAPSE STATUS BAR -->
                             <?php if ($config['collapse_status']) { ?>
-                                <div class="collapse" id="statusbar" style="background-color: #080300;">
+                                <div class="collapse show" id="statusbar" style="background-color: #080300;">
                                     <table class="Table3" cellpadding="0" cellspacing="0" style="width: 100%;">
                                         <tbody>
                                         <tr>
@@ -747,7 +747,268 @@ if (isset($config['boxes']))
                             </div>
                         </div>
                     <?php } ?>
+                    <!-- DWBM EXPERIENCE -->
+                    <style>
+                        .dwbm-container {
+                            display: flex;
+                        }
 
+                        .dwbm-box {
+                            flex: 1;
+                            margin: 4px;
+                            border-radius: 10px;
+                            color: #824c24;
+                            padding: 6px;
+                            font-size: 15px;
+                            border: 1px solid #824c24;
+                            box-shadow: inset 0 0 10px rgba(0, 0, 0, 1);
+                        }
+
+                        .dwbm_character a {
+                            text-decoration: none;
+                            color: white;
+                        }
+
+                        .dwbm_character:hover a {
+                            text-decoration: none;
+                            color: gray;
+                        }
+
+                        .dwbm-table {
+                            display: flex;
+                            flex-direction: column;
+                        }
+
+                        .dwbm-table .row {
+                            display: flex;
+                        }
+
+                        .dwbm-item-image {
+                            background-image: url('images/dwbm_experience/slotitem.png');
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            display: inline-block;
+                            width: 49px;
+                            height: 53px;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+
+                        .dwbm-cell {
+                            margin-bottom: 20px;
+                        }
+
+                        .dwbm-pedestal-rank {
+                            position: absolute;
+                            top: 5px;
+                            right: -2px;
+                        }
+
+                        .dwbm-pedestal-outfit {
+                            position: absolute;
+                            top: -40px;
+                            width: 64px;
+                            height: 64px;
+                            right: 20px;
+                        }
+
+                        .dwbm_character_status {
+                            position: absolute;
+                            background-position: bottom right;
+                            right: 60px;
+                            margin-top: -18px;
+                            background-color: #ffc6893d;
+                            border: 2px solid #824c24;
+                            border-radius: 5px;
+                        }
+
+                        .dwbm-title {
+                            position: relative;
+                            top: -4px;
+                        }
+
+                        .typing-effect {
+                            font-size: 24px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                        }
+                    </style>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const typingElements = document.querySelectorAll('.typing-effect');
+
+                            function typeWriter(element, text, index) {
+                                if (index < text.length) {
+                                    element.innerHTML += text.charAt(index);
+                                    index++;
+                                    setTimeout(function() {
+                                        typeWriter(element, text, index);
+                                    }, 100);
+                                } else {
+                                    setTimeout(function() {
+                                        element.innerHTML = "";
+                                        typeWriter(element, text, 0);
+                                    }, 500);
+                                }
+                            }
+
+                            function startTyping() {
+                                typingElements.forEach(function(element) {
+                                    const text = element.getAttribute('data-text');
+                                    typeWriter(element, text, 0);
+                                });
+                            }
+
+                            startTyping();
+                        });
+                    </script>
+                    <div id="newsticker" class="Box">
+                        <div class="Corner-tl" style="background-image: url(templates/tibiacom/images/content/corner-tl.gif);"></div>
+                        <div class="Corner-tr" style="background-image: url(templates/tibiacom/images/content/corner-tr.gif);"></div>
+                        <div class="Border_1" style="background-image: url(templates/tibiacom/images/content/border-1.gif);"></div>
+                        <div class="BorderTitleText" style="background-image: url(templates/tibiacom/images/content/title-background-green.gif);"></div>
+                        <div class="Border_2">
+                            <div class="Border_3">
+                                <div class="BoxContent" style="background-image: url(templates/tibiacom/images/content/scroll.gif);">
+                                    <div class="dwbm-container"> 
+                                    <?php
+                                        $experiences = [
+                                            0 => [
+                                                'frequency' => 'diario',
+                                                'items' => [
+                                                    ['id' => 3412, 'quantity' => 2],
+                                                    ['id' => 3411, 'quantity' => 10],
+                                                    ['id' => 3415, 'quantity' => 4],
+                                                ],
+                                            ],
+                                            1 => [
+                                                'frequency' => 'semanal',
+                                                'items' => [
+                                                    ['id' => 8857, 'quantity' => 2],
+                                                    ['id' => 3417, 'quantity' => 10],
+                                                    ['id' => 8858, 'quantity' => 2],
+                                                ],
+                                            ],
+                                            2 => [
+                                                'frequency' => 'quinzenal',
+                                                'items' => [
+                                                    ['id' => 3445, 'quantity' => 2],
+                                                    ['id' => 3422, 'quantity' => 10],
+                                                    ['id' => 8860, 'quantity' => 2],
+                                                ],
+                                            ],
+                                            3 => [
+                                                'frequency' => 'mensal',
+                                                'items' => [
+                                                    ['id' => 8861, 'quantity' => 1],
+                                                    ['id' => 3433, 'quantity' => 10],
+                                                    ['id' => 8862, 'quantity' => 3],
+                                                ],
+                                            ],
+                                        ];
+
+                                        function timeLeft($timestamp) {
+                                            $ago = time();
+                                            $timeLeft = $timestamp - $ago;
+                                        
+                                            if ($timeLeft <= 0) {
+                                                return "Restarting for a new journey!";
+                                            }
+                                        
+                                            $days = floor($timeLeft / (60 * 60 * 24));
+                                            $hours = floor(($timeLeft % (60 * 60 * 24)) / (60 * 60));
+                                            $minutes = floor(($timeLeft % (60 * 60)) / 60);
+                                            $seconds = $timeLeft % 60;
+                                        
+                                            $message = sprintf("Expire in: %dd . %dh . %dm . %ds", $days, $hours, $minutes, $seconds);
+                                            return $message;
+                                        }
+
+                                        $experienceHistory = [];
+                                        $eventName = [];
+                                        foreach (['daily', 'weekly', 'biweekly', 'monthly'] as $frequency) {
+                                            $query = $SQL->query("SELECT id, daily_experience, weekly_experience, biweekly_experience, monthly_experience FROM players WHERE {$frequency}_experience = (SELECT MAX({$frequency}_experience) FROM players) LIMIT 1");
+                                            $experienceHistory[] = $query->fetch(PDO::FETCH_ASSOC) ?: null;
+                                            $eventName[] = "{$frequency}_experience";
+                                        }
+
+                                        foreach ($experienceHistory as $i => $experience) {
+                                            $player = new OTS_Player();
+                                            $player->load($experience['id']);
+
+                                            $rewards = [];
+                                            $frequency = $experiences[$i]['frequency'];
+
+                                            $experienceByDay[$i] = [
+                                                0 => $experience['daily_experience'],
+                                                1 => $experience['weekly_experience'],
+                                                2 => $experience['biweekly_experience'],
+                                                3 => $experience['monthly_experience']
+                                            ];
+
+                                            $outfit_url = '';
+                                            if ($config['online_outfit']){
+                                                $outfit_url = $config['outfit_images_url'] . '?id=' . $player->getLookType() . ( !empty( $player->getLookAddons() ) ? '&addons=' . $player->getLookAddons() : '' ) . '&head=' . $player->getLookHead() . '&body=' . $player->getLookBody() . '&legs=' . $player->getLookLegs() . '&feet=' . $player->getLookFeet();
+                                                $info['outfit'] = $outfit_url;
+                                            }
+
+                                            for ($a = 0; $a < count($experiences[$i]['items']); $a++) {
+                                                $item = $experiences[$i]['items'][$a]['id'];
+                                                $quantity = $experiences[$i]['items'][$a]['quantity'];
+
+                                                $rewards[] = "
+                                                <span class='dwbm-item-image'>
+                                                    <img style='position: relative; left: 8px; top: 6px;' src='images/items/{$item}.gif'>
+                                                    <div style='position: relative; top: 9px; font-weight: bold; color: #222; text-align: center; font-size: 11px;'>{$quantity}x</div>
+                                                </span>";
+                                            }
+
+                                            echo "
+                                            <div class='dwbm-box'>
+                                                <div class='dwbm-title' style='text-align: center;'><img src='images/dwbm_experience/{$frequency}.png'></div>
+                                                <div class='dwbm-table'>
+                                                    <div class='row'>
+                                                        <div class='dwbm-cell'>
+                                                            <div class='dwbm_character'><a href='?characters/{$player->getName()}'>{$player->getName()}</a></div>
+                                                            <div style='color: #ff7100;'>" . number_format($experienceByDay[$i][$i], 0, ',', ',') . "</div>
+                                                            <div style='color: #a9a7a7;'>EXP POINTS</div>
+                                                            <div style='margin-top: 10px; color: white; font-size: 11px;'>";
+                                                                $dwbm_experience = $SQL->query("SELECT `time_started_at` FROM `dwbm_experience` WHERE `dwbm_tag` = " . $SQL->quote($eventName[$i]) . " ORDER BY `time_started_at` ASC LIMIT 4;");
+                                                                if (!empty($dwbm_experience)) {
+                                                                    foreach ($dwbm_experience as $experience) {
+                                                                        echo '<div>' . timeLeft($experience['time_started_at']) . '</div>';
+                                                                    }
+                                                                } else {
+                                                                    echo '<div>Restarting for a new journey!</div>';
+                                                                }
+                                                                echo "
+                                                            </div>
+                                                        </div>
+                                                        <div class='cell'>
+                                                            <div class='dwbm-pedestal-rank'>
+                                                                <img src='images/dwbm_experience/pedestalrank.png'>
+                                                                <div class='dwbm-pedestal-outfit' style='background-image: url({$outfit_url})'></div>
+                                                                <div><img class='dwbm_character_status' src='templates/tibiacom/images/". ($player->isOnline() ? "on" : "off").".gif'></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class='typing-effect' id='typing-effect' style='font-weight: bold; color: #a9a7a7; text-align: center; font-size: 14px; margin-bottom: 10px;' data-text='Recompensa'></div>
+                                                    <div class='row'>
+                                                        " . implode('', $rewards) . "
+                                                    </div>
+                                                </div>
+                                            </div>";
+                                        }
+                                    ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Border_1" style="background-image: url(templates/tibiacom/images/content/border-1.gif);"></div>
+                        <div class="CornerWrapper-b"><div class="Corner-bl" style="background-image: url(templates/tibiacom/images/content/corner-bl.gif);"></div></div>
+                        <div class="CornerWrapper-b"><div class="Corner-br" style="background-image: url(templates/tibiacom/images/content/corner-br.gif);"></div></div>
+                    </div>
+                    <!-- FIM DWBM EXPERIENCE -->
                     <div id="ContentHelper">
                         <?= tickers(); ?>
                         <div id="<?= PAGE; ?>" class="Box">
