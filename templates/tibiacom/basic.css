@@ -418,6 +418,7 @@ img {
   top: -160px;
   left: -30px;
   width: 80px;
+  max-width: 75px;
   color: #00f000;
   font-family: Verdana,Tahoma;
   font-size: 7pt;
@@ -429,8 +430,9 @@ img {
 #bossnameboost {
   position: absolute;
   top: -160px;
-  left: -39px;
+  left: 34px;
   width: 225px;
+  max-width: 75px;
   color: #00f000;
   font-family: Verdana,Tahoma;
   font-size: 7pt;
@@ -674,7 +676,7 @@ img {
   position: absolute;
   top: 0px;
   left: 0px;
-  height: 33px;
+  height: 23px;
   width: 7px;
   background-repeat: repeat-y;
 }
@@ -683,7 +685,7 @@ img {
   position: absolute;
   top: 0px;
   right: 0px;
-  height: 33px;
+  height: 23px;
   width: 7px;
   background-repeat: repeat-y;
 }
@@ -933,7 +935,7 @@ img {
 
 .Content .Title {
   position: absolute;
-  top: 6px;
+  top: 2px;
   left: 5px;
 }
 

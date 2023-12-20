@@ -10,21 +10,6 @@ if (isset($config['boxes']))
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     
-    <style media="screen">
-  * {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-  }
-    </style>
-
-    <script>
-        document.addEventListener('contextmenu', event => event.preventDefault());
-    </script>
-
     <?= template_place_holder('head_start'); ?>
     <link rel="shortcut icon" href="<?= $template_path; ?>/images/favicon.ico" type="image/x-icon"/>
     <link rel="icon" href="<?= $template_path; ?>/images/favicon.ico" type="image/x-icon"/>
@@ -64,7 +49,22 @@ if (isset($config['boxes']))
             }
         }
     </script>
+        
+    <style media="screen">
+  * {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+    </style>
 
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+    
     <script type="text/javascript">
         var menus = '';
         var loginStatus = "<?= ($logged ? 'true' : 'false'); ?>";
@@ -767,6 +767,7 @@ if (isset($config['boxes']))
                         .dwbm_character a {
                             text-decoration: none;
                             color: white;
+                            font-size: 15px;
                         }
 
                         .dwbm_character:hover a {
@@ -816,7 +817,8 @@ if (isset($config['boxes']))
                             position: absolute;
                             background-position: bottom right;
                             right: 60px;
-                            margin-top: -18px;
+                            margin-top: -33px;
+                            left: 20px;
                             background-color: #ffc6893d;
                             border: 2px solid #824c24;
                             border-radius: 5px;
@@ -831,6 +833,20 @@ if (isset($config['boxes']))
                             font-size: 24px;
                             white-space: nowrap;
                             overflow: hidden;
+                        }
+
+                        .TitleContainer {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        }
+
+                        .TitleImage {
+                        background-image: url('images/dwbm_experience/titletoprankexp.png');
+                        width: 450px; 
+                        height: 58px; 
+                        background-size: contain;
                         }
                     </style>
                     <script>
@@ -870,6 +886,9 @@ if (isset($config['boxes']))
                         <div class="Border_2">
                             <div class="Border_3">
                                 <div class="BoxContent" style="background-image: url(templates/tibiacom/images/content/scroll.gif);">
+                                <div class="TitleContainer">
+                                    <div class="TitleImage"></div>
+                                </div>
                                     <div class="dwbm-container"> 
                                     <?php
                                         $experiences = [
@@ -920,7 +939,7 @@ if (isset($config['boxes']))
                                             $minutes = floor(($timeLeft % (60 * 60)) / 60);
                                             $seconds = $timeLeft % 60;
                                         
-                                            $message = sprintf("Expire in: %dd . %dh . %dm . %ds", $days, $hours, $minutes, $seconds);
+                                            $message = sprintf("RESTART IN: %dD . %dH . %dM . %dS", $days, $hours, $minutes, $seconds);
                                             return $message;
                                         }
 
@@ -959,7 +978,7 @@ if (isset($config['boxes']))
                                                 $rewards[] = "
                                                 <span class='dwbm-item-image'>
                                                     <img style='position: relative; left: 8px; top: 6px;' src='images/items/{$item}.gif'>
-                                                    <div style='position: relative; top: 9px; font-weight: bold; color: #222; text-align: center; font-size: 11px;'>{$quantity}x</div>
+                                                    <div style='position: relative; top: 11px;font-weight: bold;color: #000;text-align: center;font-size: 8px;'>{$quantity}x</div>
                                                 </span>";
                                             }
 
@@ -970,19 +989,8 @@ if (isset($config['boxes']))
                                                     <div class='row'>
                                                         <div class='dwbm-cell'>
                                                             <div class='dwbm_character'><a href='?characters/{$player->getName()}'>{$player->getName()}</a></div>
-                                                            <div style='color: #ff7100;'>" . number_format($experienceByDay[$i][$i], 0, ',', ',') . "</div>
-                                                            <div style='color: #a9a7a7;'>EXP POINTS</div>
-                                                            <div style='margin-top: 10px; color: white; font-size: 11px;'>";
-                                                                $dwbm_experience = $SQL->query("SELECT `time_started_at` FROM `dwbm_experience` WHERE `dwbm_tag` = " . $SQL->quote($eventName[$i]) . " ORDER BY `time_started_at` ASC LIMIT 4;");
-                                                                if (!empty($dwbm_experience)) {
-                                                                    foreach ($dwbm_experience as $experience) {
-                                                                        echo '<div>' . timeLeft($experience['time_started_at']) . '</div>';
-                                                                    }
-                                                                } else {
-                                                                    echo '<div>Restarting for a new journey!</div>';
-                                                                }
-                                                                echo "
-                                                            </div>
+                                                            <div style='color: #ff6719;font-size: 13px;'>" . number_format($experienceByDay[$i][$i], 0, ',', ',') . "</div>
+                                                            <div style='color: #ffffff;font-size: 10px;'>EXP POINTS</div>
                                                         </div>
                                                         <div class='cell'>
                                                             <div class='dwbm-pedestal-rank'>
@@ -992,11 +1000,22 @@ if (isset($config['boxes']))
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class='typing-effect' id='typing-effect' style='font-weight: bold; color: #a9a7a7; text-align: center; font-size: 14px; margin-bottom: 10px;' data-text='Recompensa'></div>
+                                                    <div class='typing-effect' id='typing-effect' style='font-weight: bold; color: #ff8d13; text-align: center; font-size: 10px; margin-bottom: 10px;' data-text='REWARDS!'></div>
                                                     <div class='row'>
                                                         " . implode('', $rewards) . "
                                                     </div>
                                                 </div>
+                                                <div style='margin-top: 10px;color: white;font-size: 10px;text-align: center;'>";
+                                                $dwbm_experience = $SQL->query("SELECT `time_started_at` FROM `dwbm_experience` WHERE `dwbm_tag` = " . $SQL->quote($eventName[$i]) . " ORDER BY `time_started_at` ASC LIMIT 4;");
+                                                if (!empty($dwbm_experience)) {
+                                                    foreach ($dwbm_experience as $experience) {
+                                                        echo '<div>' . timeLeft($experience['time_started_at']) . '</div>';
+                                                    }
+                                                } else {
+                                                    echo '<div>Restarting event!</div>';
+                                                }
+                                                echo "
+                                            </div>
                                             </div>";
                                         }
                                     ?>
@@ -1049,7 +1068,7 @@ if (isset($config['boxes']))
                         </div>
                     </div>
                 </div>
-                <div id="Footer"><?= template_footer(); ?></div>
+                <div id="Footer">Copyright by <b>PhoenixOT</b> © <b>PhoenixOT</b>. All rights reserved. <p> Layout Design By | <b>Discord: jacques.tony</b></p></div>
             </div>
 
             <div id="ThemeboxesColumn">
