@@ -69,7 +69,7 @@
 <div class="discord">
     <div class="discord_header"></div>
     <div class="discord_content">
-        <a href="<?php echo $config['discord_link']; ?>" target="new">
+        <a href="https://discord.gg/RuBUj629wf" target="new">
             <button type="button" class="discord_button"></button>
         </a>
     </div>
