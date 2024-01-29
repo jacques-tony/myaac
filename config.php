@@ -51,8 +51,8 @@ $config = array(
 	'backward_support' => true,
 
 	// head options (html)
-	'meta_description' => 'Tibia is a free massive multiplayer online role playing game (MMORPG).', // description of the site
-	'meta_keywords' => 'free online game, free multiplayer game, ots, open tibia server', // keywords list separated by commas
+	'meta_description' => 'Phoenix OT is a free massive multiplayer online role-playing game (MMORPG).', // description of the site
+	'meta_keywords' => 'free online game, free multiplayer game, ots, open tibia server, tibia, game, arcana, rubin, otserv, baiak', // keywords list separated by commas
 	'title_separator' => ' - ',
 
 	// footer
