@@ -78,6 +78,7 @@ $config = array(
 	'database_log' => false, // should database queries be logged and and saved into system/logs/database.log?
 	'database_socket' => '', // set if you want to connect to database through socket (example: /var/run/mysqld/mysqld.sock)
 	'database_persistent' => false, // use database permanent connection (like server), may speed up your site
+	'database_encryption' => 'sha1',
 
 	// multiworld system (only TFS 0.3)
 	'multiworld' => false, // use multiworld system?
@@ -97,23 +98,24 @@ $config = array(
 	'account_create_auto_login' => true, // auto login after creating account?
 	'account_create_character_create' => true, // allow directly to create character on create account page?
 	'account_mail_verify' => false, // force users to confirm their email addresses when registering account
-    'account_mail_confirmed_reward' => [ // reward users for confirming their E-Mails
-        // account_mail_verify needs to be enabled too
-        'premium_days' => 0,
-        'coins_transferable' => 0,
-        'coins' => 0,
-        'message' => 'You received %d %s for confirming your E-Mail address.' // example: You received 20 coins for confirming your E-Mail address.
-    ],
+  'account_verified_only' => false, // force users to confirm their email to login in game
+  'account_mail_confirmed_reward' => [ // reward users for confirming their E-Mails
+      // account_mail_verify needs to be enabled too
+      'premium_days' => 0,
+      'coins_transferable' => 0,
+      'coins' => 0,
+      'message' => 'You received %d %s for confirming your E-Mail address.' // example: You received 20 coins for confirming your E-Mail address.
+  ],
 	'account_mail_unique' => true, // email addresses cannot be duplicated? (one account = one email)
 	'account_premium_days' => 5, // default premium days on new account
-	'account_premium_coins' => 0, // default coins on new account
+	'account_welcome_coins' => 0, // default coins on new account
 	'account_welcome_mail' => false, // send welcome email when user registers
     'account_welcome_mail_show_pass' => false, // send password in welcome email
 	'account_mail_change' => 2, // how many days user need to change email to account - block hackers
 	'account_country' => false, // user will be able to set country of origin when registering account, this information will be viewable in others places aswell
 	'account_country_recognize' => true, // should country of user be automatically recognized by his IP? This makes an external API call to http://ipinfo.io
 
-    'account_change_coin_type' => 'coins', // which coin you want to use, coins or coins_transferable to buy changes at site
+    'account_coin_type_usage' => 'coins_transferable', // which coin you want to use, coins or coins_transferable to buy changes at site
     'account_change_character_name' => false, // can user change their character name for coins?
 	'account_change_character_name_coins' => 250, // cost of name change
 	'account_change_character_sex' => false, // can user change their character sex for coins?
@@ -350,7 +352,7 @@ $config = array(
 	'status_interval' => 60,
 
 	// admin panel
-	'admin_panel_modules' => 'lastlogin,coinstransferable,coins',
+	'admin_panel_modules' => 'lastlogin,coinstransferable,coins,donates',
 
 	// other
 	'email_lai_sec_interval' => 60, // time in seconds between e-mails to one account from lost account interface, block spam
@@ -368,4 +370,6 @@ $config = array(
         'names' => [],
         'words' => [],
     ],
+
+    'enablePagseguroLocal' => false, // set true to enable donate and boxes page on localhost.
 );
